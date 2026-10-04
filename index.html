@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="es-CL">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sistema Creativo Usados — v2 interactivo</title>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Sistema Creativo Usados v2</title>
 <style>
 :root{
 /* Brandbook SAIS Usados 2026 */
@@ -147,9 +143,43 @@ footer.cenefa::after{content:"";position:absolute;left:0;right:0;bottom:0;height
 footer.cenefa img{height:36px}
 footer.cenefa span{margin-left:auto;font-size:12px;opacity:.85}
 @media print{footer.cenefa,header{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
-</style>
-</head>
-<body>
+
+
+/* ===== Pestaña 7 · Tendencias ===== */
+.tr-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:10px}
+.tr-count{background:var(--azul);color:#fff;border-radius:999px;padding:6px 14px;font-weight:800;font-size:13px}
+.tr-count b{color:var(--amarillo)}
+.tsec h3{margin:18px 0 6px}
+.tdot{display:inline-block;width:11px;height:11px;border-radius:50%;flex:none}
+.tdot.r{background:var(--mag)}.tdot.y{background:var(--amarillo)}.tdot.g{background:var(--pb)}
+.tr-sum-done{color:var(--muted);text-decoration:line-through}
+.chk{font-size:12px;font-weight:700;color:var(--ink2);display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+.acc-btn{font:inherit;font-size:12.5px;font-weight:700;border:0;background:var(--amarillo);color:var(--navy);border-radius:6px;padding:6px 12px;cursor:pointer}
+.acc-box{display:none;margin-top:8px;border-left:4px solid var(--amarillo);background:var(--am-s);padding:10px 12px;border-radius:0 6px 6px 0}
+.acc-box.on{display:block}
+.vpill{font-size:10px;font-weight:800;padding:1px 6px;border-radius:999px;margin-left:6px;white-space:nowrap}
+.vpill.ok{background:var(--pb);color:#fff}.vpill.src{background:#e3e7ee;color:var(--ink2)}
+.tlist{margin:4px 0 8px;padding-left:18px}.tlist li{margin-bottom:3px}
+/* ===== Pestaña 8 · Métricas ===== */
+.status-bar{display:flex;gap:10px;flex-wrap:wrap;margin:4px 0 16px}
+.st{font:inherit;font-size:13px;font-weight:700;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;cursor:pointer;color:var(--ink)}
+.st:hover{border-color:var(--azul)}
+.st .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px;vertical-align:0}
+.dot.r{background:var(--mag)}.dot.y{background:var(--amarillo)}.dot.g{background:var(--pb)}
+.msec{margin-bottom:18px}
+.msec>h3{display:flex;align-items:center;gap:10px;margin-top:18px}
+.pending{border:2px dashed #b9c1cf;background:#f1f3f7;border-radius:10px;padding:18px 20px;color:var(--ink2)}
+.big{font-family:"Gamay","Gamay Wide","Mont","Montserrat",Arial,sans-serif;font-weight:900;font-size:44px;line-height:1;color:var(--azul)}
+.banner{background:var(--azul);color:#fff;border-radius:10px;padding:18px 22px;position:relative;overflow:hidden}
+.banner::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--tri)}
+.banner .big{color:var(--amarillo)}
+.callout{border-left:5px solid var(--mag);background:var(--mag-s);border-radius:0 8px 8px 0;padding:12px 16px;font-size:15px}
+.tag-funnel{background:var(--mag);color:#fff;font-size:10.5px;font-weight:800;padding:2px 8px;border-radius:999px;letter-spacing:.4px}
+.tbl-wrap{overflow-x:auto}
+.mini td,.mini th{font-size:12.5px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#eef1f7;--ink2:#c2c9d8;--muted:#98a1b5;--line:#2a3a55;--bg:#0d1a2e;--card:#14233b;--azul-s:#16305a;--pb-s:#0f3346;--mag-s:#3a1830;--am-s:#3a3010} :root:not([data-theme="light"]) table,details,.filters,.ctl,.outs div,nav.tabs,#modal .box,.subtabs button,.filters select,.filters input{background:var(--card);color:var(--ink)} :root:not([data-theme="light"]) tr:nth-child(even) td{background:#172a46} :root:not([data-theme="light"]) .bar .trk{background:#22334f} :root:not([data-theme="light"]) .falta,.ok{color:#ffe08a} :root:not([data-theme="light"]) h2,h4,.kpi{color:#7fb2e5} :root:not([data-theme="light"]) code{background:#22334f}}
+:root[data-theme="dark"]{--ink:#eef1f7;--ink2:#c2c9d8;--muted:#98a1b5;--line:#2a3a55;--bg:#0d1a2e;--card:#14233b;--azul-s:#16305a;--pb-s:#0f3346;--mag-s:#3a1830;--am-s:#3a3010} :root[data-theme="dark"] table,details,.filters,.ctl,.outs div,nav.tabs,#modal .box,.subtabs button,.filters select,.filters input{background:var(--card);color:var(--ink)} :root[data-theme="dark"] tr:nth-child(even) td{background:#172a46} :root[data-theme="dark"] .bar .trk{background:#22334f} :root[data-theme="dark"] .falta,.ok{color:#ffe08a} :root[data-theme="dark"] h2,h4,.kpi{color:#7fb2e5} :root[data-theme="dark"] code{background:#22334f} :root[data-theme="dark"] .pending,:root[data-theme="dark"] .st{background:var(--card);color:var(--ink)} :root[data-theme="dark"] .acc-box{color:var(--ink)}</style>
+
 <header>
   <img class="logo" alt="Salazar Israel Usados" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAe0AAABgCAYAAAAw7SpJAABAR0lEQVR42u2dd5xdVbXHv+ucOzMJIUDoSFOwF4QnFkCEICo24KGACgJiAUWlqaCUECQ2UEHhAfoAQVAJSBOIJoEEBGmCIMJDFESK9JY2mbn3nPX+2Gtn9pycO3PblMD+fT7nc2duOWf31deCiIiIlyx0GgmA3sgt+ndU/8RN4fsRERErFuLGjYiIiIiIiEQ7IiIiIiIiIhLtiIiIiIiISLQjIiIiIiIiItGOiIiIiIiIiEQ7IiIiIiIiEu2IiIiIiIiISLQjIiIiIiIiItGOiIiIiIh4SaLSyo9UVYAU0A62JReRtu6nqp4JUWNI2r5n4b7L3urEfTvQrhTIPQMmIlkH7imAjEBzpd35KJlfFZF8nPVZADoxFxERERFtE21VTe1Aqo2njqiqFA7wLHi/LQLbCcIwQv0NCUPWob5qh5mxFWF+R6TPwV6JiIiIGF2ibdIIIpKp6prAB4G3AZPbPPByoBs4T0SuVdWkWSLpf6OqWwBHAK8D5gDfF5FnWznY/W9UtQc4A3gF0A+sBBwtIjeNxaHspULr75eA/Wz8zxaRM00a1Rb6WxGRmqruC+wD9Jo2pROS51Jgvo1jX0Aom53fbYFv2lz8GZgmIo+1S7hV9WTgTTa/SRv97AXuAq4VkettryTjkemLiIh4CUNVxRNtVf2qqj6qncdhXjpplmBb+16jqs8V7jlfVSv+Oy0QR1R1oqo+Ubjvxz2hG4O5SO316yVjeEgrY2i/6bLXk3Tk8Cs/Zy3M75tUdUnhfrfZ/LQ8v/b33SPQ1/mqul2r89Gx9RILhkREvKQw7Ma1wy2xv88CTgHWx6nH+01yaudabK+9rUo4JmV9F5hibcrtdTtgH5N02jmkFuLUsUvttTpGzFMC5Kq6MTDN2lKzKwOOV9UN7Dut9neJjd1ie23lqlp7skIbP6mqm5nUnDQxwQp8H5hYmN8tgc91YH4XWTv7g/ltZS37vqutvWtU9SCTuNN43ERERLSLRiTFxA6do4H97VBK7ZDshKTZY68rtSJ1WtveA+xmB2530LccmKaqFwGL2lCjJtbn3F5ljObLq8WPASZZf/0c1HCmimNE5IA2iPZKNobdHW67VxGvC/y1kTEM5ndH4EN15vebqvpr4LkOzC/22i6B9SYTAU5V1UxEzoiq8oiIiBEl2nbIZKr6WuCYAtES4F7gdpNAWyVknvDc4R/bHN3WxKRsKRCIxO69EXCoiBxv0s4K6RgUELAtcDZn38c8IDY5sK+qniYif22SSPjv/RX4g0mOzRKv1DQmGwBvt7kUG/MUeBy4rfC84eY3BWYMMb/rAV8XkSM6ML9+7d0F/MkYBG1i/DYFtg/mwr//E1W9CfhrJNwREREjSSgq9jrN7HRVVc3s7xNUtXsM2+Ztu7tbe7KCTTEPrhdUdUOzjSYN3j+0aT9g9+y3113D8Rnl/l5pbaiV2FH9e5eHvxnleZmkqtfbuGd25araq6rv88xgE/3dq05/8+AZi1T11a3Mr/19i92zz16nt9H/LVR1XtBG3+7LGu17R+cj2rQjIl5SGG7jeqnlnSZx+PjYG0TkaBHpV9W0Q1fDkrp9V1V1AvDtoG0KPA+cE0hmObAqzuNbGTvVdiek7J2AD1uffD/m4zzlQ4nvo6r6vlZsqd7psMnLM3erA9cA2wZStm/TviIyx/qSNzi/k4DjSub35EDbozhTwXEdnN8eW5M9Ta7hRET+gousuD1oiwIfUNVNm7XnR0RERDRMtAP74KvsAPKH7VXmsdslIlmHrmbU4l7FeCAuvMu3S4ALgc8C9xUI2X7mBLUiOgWpEcbpARHwr4fZlQdETIAZ9htthiESEW3mcj+RmqquAcwyBi8L2oIR7JkWVpY1Mb9fAl4d9E2AC0TkUOAvhfn9hKpu1aH5VWtns2s4tz2xFPh6sCYzYAKwTYPMckRERERLkrZHb3AAAaxph6qXtJImr5alocCDek3gyIAwCPAicJIRk2MK0lg3cMIKKmXnwKeAdwTajwS4RET+IiJ/A34TzGeOsyl/qgOe1UPOhRGq1YErg/YlAfOwj4hc4OPAm5jfdXAx9xr09zngB/b/kcG8K86O/J0CUzMWqNn6vhF4KBgLgNePg/ZFtLfmB2mZ4oiM+3kaRHfGcs7KtJQdJ9qBGu/vwSGsJtWsJyL9JnHlTV7q1aotNNx7CH8dWCeQshPgZBF5wGKOfwvMC/qY0YbaeKwm2STlybgQr5BBWQocHUz+cbgwLT9HChxnv9VOL9aAYE8w7ca7cB7s3jkuAT7TDMEuzO8RwBoFKfskEXnEpNnZxiiE87u9qv63tWvM5tfaXwUeLRDpyfE4HVg/tv+LV9KBe5fdt9JmO9MyTZTtv7RTbW+hX2mHn5HWG79hrmUmorEgjMV5COZoEN0p0J50JNtaaJOUaSqD9dXwuA23kP1Nfgd8IpAa1gdmq+qROA/yZhZrDjwjIgvtkKdRj9rAm/3VwEEFgv0IcEqYEUxVjwL+yGBV7QxVnUdj3stjrgmx/n4Z2KQgZZ8pIvcFh8k/VPU04Bv2vRxn1viqiMzopOd8QLAnAhcBOzLgIe6l3sNF5NxmCLbPpa6qr8eZPkKzx0PA//j5tfePAt5v69i/921VvQqodiLFaRuYAGxc2EfPR3K9jLHJR2oPNsEgDrsWi+0sEklvRikKOiMRIVCvX51c553K8OhNc3So/sMwgk1SMg+p7cEpuPwOS01T1y8iVYI03PZd7dSc2RqQkjZJQCtFRGpl62u4ORiOaOf2oEtxNuLXW2cFeLNJOkto3vlniareZfc9R0QWN5gS1D9nGgNxyv7940XkebtPzQjLTar6G2AvBhJ9vB3YywjKuM0NHaiJ1wUOLxCwZ4DveUk8+P6JwL7A2vZ9BQ5X1V8A/+lEuFFBwp6Jc4yrBQQ7AQ4TkR83KWEvk1JV9XjbaFkgZR8nIi8G85taWNs5wAHB/L4J+KyInD5GIX6pjcfWwIYMdsi7v7COX5YStq2fzYH34RLShCasOSJyZ7NrtZB2eG9gtWDuU+AFXKpfbYAILMvrbwzkjsDmOP+KtQIGUVX1aeCfuJDV34vIQ40evk32qwv4jGlrsmC8/iEil3Ugla9/zh64MNlqg+tU7LvPAE8DDwL/EZG+EgZIO7yW/BhnFsm0JfBeYAvgtbicEBNs/n1yrGdU9QFcWOc1wC0isqhT7Qzn3fx83o3zZXkjLv1yj9dEquoC4F8m+M4B/mxCmgQau5aJB6q6jaouDUK/aiVhVq3gflXdoYyLLeF8UdV3BaFnPpzmr6raFaoYAhvGqy0kyH8/V9UHVXWVoVQSYx3yFfT31CDkyff3iOJ4Bd//csn3Tx9ufJtQ94h5VV8ZrIXcXsN0tJUmIwLSYJ3lhfm9bYj53UBVnw3Cq3JV/Y+qThnKbjRMyNd3w/ltwlejErRvXmF8ek1DNKphX+Mt5CuY58PrnAdfa2WtBuM+pSSdsdp7SSP3sL93UtXfB3u+ESxS1d+o6madmmevwlXVHYZ45rrNhDsOM353tHme11T1b6r6v6r6EWOi6OS6L5wD66rqN40GtIJ/qOq3VXWjdtsZrO31VfVEVX2sybbcbrUf2h+vgHDvpKpPlkxS1sRVs41QDQ76pcPF8AaL95rCc1VVP1xGRINB/H4JITtqqMNhLIl20O432NiEDMcDFgudGCHzNqUuVe02ZuQfhbj6JZa7W1ol3IFTh6jqhcH9wxjqE1oh2AXCOL9kfne073QV2uGJ6rEl8zujkflthGi3ME6nBLkDfHuuGG2CHRLn7I/JLfm9iWY3JOOFaH/Z1s9SG6Ol9v9X2iTaqxlT7s+Zfvv7waHGPvj9JFX9WckZV61z1oWfeSwJmNdOON6iqhfY85YG69wLUYe2ex4F/Z9v9+4LntPI5fMxFHGvqh4U7NW0Q+tHVPXgQl2IvDBPeckVzlleYOqmm8mvpRoY9rqPqj4d3DcbYu1kAR0M23K5OVq3Tbj9YG2iqqebNNMuwuQTT6rqWmUcY/Dsj5QczrPrdS6QDNdQ1ccL0tjzqvqKehzqGBNtvwAuLunvXg1oJbaztmYBYb201UVQKBhzVh2C/b2QuWpxbe1eQuyubqC/FTscNJjfhbZWh5zf4Yi2MUKvaOB6raruGUjYWUEDsVUnDq2WJe07uUUfQ/XOcSNpf6WwjvzrVztAtP8dzIFn/P49hEDgz4nJqjqnsAbzOgdwmbYxLxDvGe3MedCnjU2i1kJ7/LPu8gxtB4j2H4dI3pQPc2mBMIb3uFlV39nmePi1s5Gqzg7uXS3R+hYZquow3/O4VVXf3Ew7g3YdWWhTXrI2wvaUtaUaaI/XKp5Vjdi0Q1tjZvr6B4EvmhPaG8x2lDdhp0vM7ngIzqEtMRvg2sAhInJUuLkCD+puXDrL0JZSw5VqDAaQhIsQ7nGOBdbmZ20D/ZSBePPVgKNE5KDxlOwiSKSyHfAxBqcpvQW40Ds6qOqPzMYWelh71IAuBuKEd1bVqSIyrxl7W2hfUdWzza5Ws7XjX78vIke2YhMqJMrxHvIa2Mq+6WuHq+r+OIdI76Xu10E/zsfBr68cWBlXunPfVufXbOfbmu1ruMQtKYND7hJrfxdwivlXJKPtQ3Hc9GnAdB74+cdYedJEFi1eClwM9n7EsjWkwFlmv+5ncO79LJjfsrUUOsR6344M+JaqPiAiZ7do4/b+EZ9kwIcnLXyeA5sBU4E5I+ynM9T618DWXtwLisvfcK2qHioiP2u2ncG5+A63gNmQAV+aSqENFRpLHBY6hvnfvh24TlV3t1LRQ/rlBO36GC6dtr9vpc7aqNeWcH1VgbcAv1TVDwXta45oB4Tbe8a9CNzc4uTPUtWLgdk45w7fqE+o6gki0hs4VngP6n1tcYYe1BeIyO0DA4eIhJ54eGeuxDbkwbj80GqDub+q/g9w7zjKCe3Ds04oTJbisrp5j/t9gUOb2GgJ8F1VfTcNeu0G3o5qFd7KCPYpRrAruGQkzTpP+Pn9vDFz4fyeLSJ3mRS0DnASzht0uP76w2wvVT1VRG5rY37FCG8jyBmcb70LF3nxtYLX+6jjieu3Ys2uVXimtsDOvIjCobszsLut6+4CMfKH7d3AP3ChfBVcdMBbcI5bIbMmAfN4oqpeLSJPNOMsZnvPO1h9egii6ZncA0RktqqO1RqTAlHKCkxOhitGdKaFC09vlHAXCPYfTOCqFehXViDgD9hcPYHzGp+MCxHexM6ZtNBOCc611YErVXWXIItjVmeOclVdFfgxg3NKhOsB4DFcXYdHcaG56+ISg20RnFf+u11GuD+AC5s9qyPMWBCD1srVY/fYs6CK8eE+oaORqOqqqvpwoGLIBqs/Zy5bLH3z2Fzn80GdxSuNcIvOm+ftKXuVqJsvL1Mbj4V6fBg18eXB9yaa3Xqp2c+WllxF9V3D6vVwfu3v0wr99yqcs9qx2wV27NUL5otMVV80taCfhx/b54tNjV2vv7VCf+fUMbkMqx63z7a1e4d+GNWCui2vY887NVjrY+IxPo1pCcAtW0+/5Z/b/Uhv2Xq6U4/b+y939XhwzswpUW/73/5WVbcOnaqC36+mqp9Q1X+VqK99n77VbJ+8X4iqfqCktkJRHa22LzZpxwRWoh7PAxv9tqr6KlXd1F7Da1NVfY/Zrn9lpket024/vgc3eA55U+EGqvpIieo+D57xlKr+0JyVJ9e5X4/59xxlTtBaMm/+fgtV9b+GML96urJPnXapqv7d6M6Ukt93qeo7VPWSkrHy439ni/lMOm+ztWtTW2yhDfC9wXf8Bp9eQmyd3XHevIoqojNJq9fIz2vXSa7Xi+qN8kLf7OTzADqTNPDuva3g6JSXea+PNtEOHKwmqer/FQjYUlV9S/DdH7TgO5AFjmwrD+c5H4z99+ocrme3Q7ALB/h3Sub3+OB772zDk1VVdZd689sA0d6hwfEN1/Adqrp12bPGimjf/M5v3/KPbU/Wm9717Ui0lycI65fYjP3aOa7Y/rLEJkZU7ikcvn493NrsPgnadmHBN6IM1bCtrdiMhyHai1V1vSbutaGqHh+Maa2EcGeBg2kyzJnYFbSrWod5OTv0AA/OprqJaEwY/F5hvopnx722ppabv2AtX1JgSPx97jQNYWl7Cvf6bh0mR1X1beHzKs1Magfj7LzqaFVTRYU22cXBdzJV3dDU2qFt4AlTOwm3bykiqM7jk5VV+FztBbQmZBVh1aSip/bO4Rp5Hw/qn3/WJVseUFXVacBVgR0rAb5jh6yOYUIOryb+Ai4ePlQTnyMid9ui6bJ2/7ygUilTV2W42MW3BeqaTYAvicgPyuKYw2QF5lx2RIlK/Fzgs0EiiWHHrfh5EIf+KuDLLJ8o50eBSvtV9sxehi4X6tfUHgwu1nG8ObRlTaooU1yO8w/UMTl0Az9icH50cJncHglVe1ERPS7h5+s1ZjP2pg1fgvhOETnO1mpi5p+y/VIRkUdVdR9c+tpKwVTyWmB9y+aXNFAwx8eyb4zLg+BVz/5+T+DifacU1LGfVtWTgMUjcI5NDMYhrzOWgktS8ghwrOXI+F9gq0B9LYH54GequiXwQp32+nPoEFy8c61gv/Z7/gsicnYgSOUMJEvJS+bLn3EvAkeq6nW4NNCrBGeq9yd4AzBdRA4Oz8vAzyY1NXeZT9FXReRJM3FUSxKpLDPlicg3VXUqLhV0LXh+auO3rABRM45oHUuFGdhlDyoQg0W44PzwmUfbQRwmUvmuiDynqikLb1eAmsp7K+4+KtBV7SfrmkiX9LIN8CALD1DbDFer6lwGsnhlOCeJT4nI+Q0m5EhtcVTaNCFlPpWdMQxr4jKahbaRF3FZ3HzSh34jpI0yWxsDfzN7kl/sR6rqecCT4SESJpYwafOIYOHkNkdX4QqyeAe1PODSpbllILmVwZxcmN8TROSFINvbb2xTNdrnicAuwabeDNhfRM5sMuGKiMjzON+Les96BLgBlwzGj+9GwB/MY3xBrKE97rF+MHcSHNzXBkxsrd65iMu+l5h/zV9wKX1DrAqs6Rm5JoSaTzDYAc2/nmRtPjQ4OzNjyHcSkYtHILFQbvuVBqv0pSJyr4XyXoSrfBc6XGXGjB8hIkcU2xsw9Rvi6kjkAcOuAZO8n53bFWtjbTg65n8fMFyzzOHrKjuLNGCUMuBAVfX+NcW9PMVs7BTWzuPAnfaMahkDZe/VAkbjPKNFlcC2jc3roMXRzCmrnbgsBGsGsH/AeSiu5OdT3qnJsibtV5DC7gF+7id1YKXwMOI4XFVqiaAoksO/AS56epD377cYyOzmnz1dVVemsTzdL1oKuqX22uqlIQEzgr0ug7Of/VBEHmWg8hVN+A50i8i/cV7zoXPEFODIklKWnsM/DleQwx8IXiNxKbCLr2jl29PEvEsofRqX/SkGe8jfDZwTzm8T/hPd9rujgL7C/H7L7ErapJpShhnfO3FZ6JLgIMmMQz/Pj3EsLjGuUU94qbQQCXEj8BTwH3t9wl67m7hHZtEU+wXngN+DvcAFARNb1Dx9oSCJjr76wu13n7Vwse3x+wLm35/liotEWi9wcg4ZZgU+x/IRSp6Af8sIdleQErTZdlbt9zfa2IUOo6FG7fDCewSflTmqpiXSd91pt9e/2lp5srCGQg/3oSVt7+5uqe0OxoVCtGvHVVNHrcvgMBrBeeAtmzBL1tFdkMKONe/y1BEYMlWEG/SsbIHsXZnCJlSd8ih7jku6nuVGnUYie5CBeIJxm6r+CtiHgTzdRbVxXocDBjjBtATS4ubIbaJPtcIXuWXL+lJhUf8bl089LItKE+FankCdaAeAZwhy4x7PFJH/C3Plqup+uNCrajDXvt8bAHNN3ZM32V8fsnZ48P4JATfrcbRtpDRkChqUGnxY4j1mc/9iML8bAYeKyLFDzG89zjwb5nm/VdVjgeMLpoSdVfUHIvINY0RrRIxHPFM4kP1630VVjxKRRZZGtFaPiAcM9THA9wrnggALw+81YCZ7n5nJ8kAyTYBrzRP9KVzq1P9icN7/7VX1rXWkwtEm3n5/vKCqXwLmFsYkM8n2k2Zm8tK1P4tWsjNaGeyFngLXi8j3jUZV22ynJ9wzVfWjuDS4oVZAbS28QkT+U4gEeda0oWsF7cxxnuofsHt2q2pdpiI4z2/BebYX187Shs99W6io6je08/BOIt6568zCM3cs8aC+vtwT2G22xXNZP/ujnJDdIGfrdclBej894ede7WL3eFWQ3tQ7jDytquuFzyg4omUd7P9z/ln2nPNLEgXs7yXTljmk5R1/Qmevi4v3N0e9vE5yhXbx4eA5Hy6Z37qJcprob5je9LmC48sC75Fe6HPLGdEKmdl+Vce5ar9G79dpREe0hhzRNg2yixU9iC9U1Ulh+0eymlXQpksKDmh+j+we9PUrhc/86ynNrrcGHNFe2ereDPbH5SXtzVX1pkICp7RAA/ISp9qt2z0b65wbG9k5kZc4JX620D4/V8XIA//bJ3xCmfCsaLe6WKMTsNSk7MX22u5VDbiSLuCXwFcCO4bgMj/U7LteOvxmiUoXEVQVmbQjj6Xb6tHpu3V/2S4/TV5Ln/+8wBEnIvIv4DQGgtn7cQ5EX/Px4aFEVbj6Tf3ayrXE+n6wiDxuGoW34RKp9AdS3V+A85YzA7Qg1ds9fo5LTO853Kpxj+/2HHFYgKSkz1kwTs1cS+y3l4jIVcHmPL4wvzVTa7fL3fv5fRT4YaG/K5skX5SWMnu+f82beJ6axJ2YKu/PJmn321f6gZ+q6jt9IZso2I4PmCkowRVtuJ2BBBsEEtMewJ9U9TOquoaZhrKgxPCgspxlNZMbPaADB7RNgJ0YnHMgxcX4XhWs34uBBQwu1gOwp6qubuttPJhlvMbvtBKNhuBi3V8Z+Pd47FCYE5+45CYR+VMnkxUF58bDuEJYEjzX28HfU4d+Xl2gSf7vdYB5qnqSqr7Fmw1s/fiynGlIxBtZP40eICuZmnqSvbZ7ddlC+ydwoIjsYw5WfhIOxlVJqjhFN13AxSJyYz1vXE+4dR4VnUdFlTSUsOsQshNNNdZjlwCHqeq7AocGwdmA06Dd3cFvmr1WwlWYudAmbQJwBq4ajb9vgsvWVgtsOy3bl+weS3EOHUkwBxXgDHPc8s852frcbX0Nr64W5nol++2xgYfoYabWC+f3QjNbpB1Q6fn5/anZhbqD+f2cqu5QqKm+qrVlor2u1MIYIyJLgD3Njtlt9+o2ZmGuhe1pJNzjjXZLDvyCAUciCoR7M+BsXBKmi1T1C6q6malUM29PDbyBl6ud3KQQtTeDq9z53/9aRJb4g15EHscl7wkJWmbEYrfAtjrW8GP6JzP5hf4fudGVNwZj4Pv7Fsrtwpc2Sb+a1dhcXoe52DzwxwnXym+MeQrf8/M20UyCf7EUx8dZzPsaxvhlARFPjQbqUOtnOPVJFgz2aTgniE4M1JMmSd5oi1ACG2Fii+5CBmzegnMkGt6GvD15mBWt3iFrBOQZs00X04W+mYFsb1UjZGvRvjdmbsT5AmNSUNXVbXyvZ6Dc3sMiMqthO0ZjtiVfYvUoG99qQJzXFZF/Gef6K1V9HOftWaE9hxbfn7vNzizBYj85OGgAftLQ/DZIRG1+F6jqZ4Cdbe1i479W0D6An+F8Gvpsk80tHDaNSm2piDyoqrvhPH+rgT1yErBZELoXMT7gie25OL+PrRnw5wgzmyku1fLH7QL4P1W9E7gW+JOI3GuamqbLPNp6rVkCl71KiEYN54AGg32BzsE5ehXP5c+bX8eYhxt6qdJ8A+7CZZLTwh58Pc57O4xIeV3JOHh6BJ13tvPak1sYSEEcPn8jXFjY84U9/7j5MpzCgA9NEhBurynZ3q5pwGOqeg/OcfF64GYTrMIonvEZcdI5mwStZOSSMey3jNP5kJdKf18uzxwK0abdWMEQe13f/Ga0xK4bJgYp8/foVdUbVfVrqrpBqPJuclw+UrCp+zZc55NSFdSo3ZbEI/xN03bfkbRpF/r33Tp2+B/Y55VgHp8uJKnxpUg3bKctDYzBylYVrvjspaq6afHZwZwcP0QRk7xQEa2IB1T1J5Zmekja2OiCKmaWafdapsevk9M1LflN3cNQp5GIoC/MZPX+a9haGyxeUrBJhVfSQHvauZJCopHKUJl7On1oDjW2Q4xJW/Nd6G9T89suh9/C/CYj8MxKVIuPW/2418w8hsvf8H3TuqSByrPGgN04DTQx3g9igknpJ+Lic7+vqmt5aaxBrRS4HAhFLY/g8vAvS6Zk+yk1jd0vC/fw3/vCOBzu5+pIyWsUpNrJBUk39NZeOEKStkcfLmdIEV24vORhO5f5RojIsbj8EP9koGiJMuAn49dOUlg7apq+rwB/VNUrA1+j5c6MSoOLOqc9Z6im1blNSNiJCLnOZZ2sS2ZrjTfyB12ND7DYCohou88a6YxWwyUEGO2xHYX+ZqPY32HXbqfbM9r7JaKjKtx+XPKhC4CDgI8wUI3QIwxBDdWgXhW6Bi7nwidUdR8RuW6ozHiBA9prcdn3fJES//oUzjmKgro7tKkeg/PNCB3SdlXV9UXksXGU4EcafL9eW6uMfOhkvfjqxJiz0j1vc3yFqt5gDNMngLcW6Kw/G8K1E76f4rLgfVBVjxORbxfXzgrN+ZuEnetlTM5SuSRdhc2Ah+kmpo2MiIhomtny4YAicreIHGiH7m44m/cDDGQITINDNwuIpfcDqeJsoFeo6tvqSU0FgvVpnE9FmKQHXOTFs0WNVUAoHsPswQx2SFsVFwM9ns76riGkWwqMkZaM0WQGsg+ONmPRb5J+qZQfxKU/JyLfw5X53Br4Ds4OvzhYI2kwT1nwfjjvx6vq9OLaWWGJtk4jYTqqV7BStppclk5ga/rIEW6UqSzVmaTDSdkRERERRYnbH5J2AD8rIpeKyH64xBdbmBR1LnA/g+tHhxJ4lxH4VYCZqroGJdn4gkQiEwMC67/j1eoX+LzfQbGlJHwPOL/wG4/9LRlSNk78LTauQxgfLxDDZxmoQxE63q3OQM71kerPysB6Jc+oAS/UI9oB4faMX1VEbhKRo0RkG5yz3W64pFI3MhCulwaaGgKCXsNF3ewSmllWSKK9zOlsHmk2SS5IV2aH2hL6gERUnRpp93gARUS8DKF0JgIhDw9gO4T7RORvIvLzgIi/A5cW+f7g8PXwWfA2AT7r7dCFR/kkLTsBmzI4A5qPSb7B2lP16YODy783C5cGMyx4kuPS6b53HAhp3iP8rXU+/1dh/Ku4uPRB97Ax3Two/NFRns3uuynOxOGZBT+nTzOQPa8Rxs9XKavY+48aA3iMiLwb2ByX8W0WQcGVgFnw/x/joxFUVVY4om0EW2Q6ea5yQTqZXWsvUq100ZMt5uklCdcGExwREbGCCbtt/r6HcrtjfUfWOrnlwwO4eAibjbgmIn8Wke+aBP6DgGiGh68Cu5lEXJR4fRzuZ+swHNeaV/smls2v7NpEVV8BzClIgf71gKBQxhic2ctUu5vgwmlDBsIzKH8f+Poyx727C2e5f33vCFVi9A7CO9r/WWEc7xOR/tCRuJAgJS04WasxVLXA2987vYqI/EtEfikiH8I5sD1eINx+HLYA3upzblRWpN2sIFzk8ohX58r/JJPZI1tIVUDoQanxx1Wm8oypxrMWFldaVHUMsxA7zektF9c5Ws/p8CZteBybuKeMoKSgoZNOyZjnY1Su9eVEnP3/67WoxvWH3Uo4lTSFA7CXIVSaDUrfobNZsczjEuAIVX3GiHfR2ejNwDoW0+ur+oUOaO8rEDO/hw4BvsrgpCP1NAzF3/rf7KSqrxWR+8fIIS0JalisxEBeb69VeAKXrdGrlz1duhWXZbBoLthFVY/ElfTsSH98/ggzJexVmAs/7jcG7/u6CM3UMAgZgUHnjDmw/Qu4BlcRzkv5mWkX3onLNZ+sMERbQXCe4ln1Gjm5sgpfrC2kJtClQoYioFcALavGG9m8ox34PlLPGak6z2VhfJ3YWE0UDRm3Yx4xiDgvqvP568yTu+n72t5cD+eoVFRtPlXGeNnB+X4GSjKGRPBqEelthIgH0uSPcYV/XsngeveTcKUoHy8Zi0/jkhCF9aIJftfOWGemfdgXl1ip3bTIrRLDKbgCPiFz4Rmbay3xij+TfPvm4tIgr1QgYusAB4nICc0U/xkGqTEWn8BlZ8sCJsE/Y5Zvt5ekVXULXAGsMHtdCtxmCatkuCIzNk7dlnjpfFzJ1fD54GqyA+gKQbQVhJmOYPdfwzGVlTk4cwS7ooqmKWnWy/NpanWPj6Opcno2+OsApwYfZcDXw8L1wQSoqr4B+BAuHWcPg0vHNS352qY92YeHeOnPkk1MxXkutitpPgz80TbJAi/RdEqKDMbyv411ynDlKee0SriDsf8v4FhcHvxOxbH7cZ8tIqfb86bg6hWvaodoN3BSkOs4EvS2t/OytRhKM37vbKmqk4FFQx145WegqFXH8nMbSnOPFtaTv3cXcBbwipJ7vhL4dyPzHmTxynBlKF/JYDW1EMQiFypZFSW7svFqV4Oxt6p+H1jY5Li2S7ArVkXrJGDDAjHykubZJWOZGNGbZ+esn0/PdHxDVS+xmt1tCSCB2WIN4NsMdnzznt234lKRhoS5hrNJH1Jy229Yn/33hoP3EP9Lnfnz2iNWDEl7HqlMpdY/m691rSLHZ4upqVIRp5zKZQJpvphbK1N5XKeRyPSmOC8/CZMZSE/oMQMrXB8QpB57/yDqxOy1gSuB6wobbztg1w4+4zA7iH4sIqd0ShIOcvIeCJwefLS3qn5SRH7T4nP8WGyIs/uMBHqDNvtDtCf4/BJcyEZMP9oZRgngHlxJwzC2OMeVf91ZRC5otJypP0gtj/++dYjXHUXVpqEf5wS1TkDg/aH9elV9uBHpNGSAVXXNwtnisSAgxN6W+xGTwHPKY8FblhwL/d0I+JDtwxEvE+s9241gHwTsXyDY/u8/AdeXFP9Ylt4YF7csJef1eao6VUQW+jLSrZxbgcB1ro1TcS4EOD0I6coCVdBDDIRtpcHr5rYWtIlzLsepxsuwLCRu3Dui6TwqMpVa/1wO6JokJ2aLyTQjFfGD7qdRL1MQtm+5TzmDK1r1MTiEQ4wrvhKXAH6CLfx2Kn6Flb/6WD5WEVzYg68s5jPotPIMX10tw4VdnKyqs3zi+nbLYZrKaG3jVHN7lq/mdpKqrhYebi2gWpgX//fSNq4l9rqgINm8UBjz/khrO6QbH8g+9rhJFVogiArMCKpUVRogll124H8d5+yUBWdbxe4/J2QafOY/kzgfCKS+NHg9MHQ4GqZrFbvnG3Ee0logNDmueE1Rgv5sHYk6bfMqk9YP6BBDUHcuvKNe4ID1VSO8eR16c5Qx8oXKjctik+fYFYbU+b/fBlysqqv6tdJE2lixdvq1cqYxB+Ha8QT4TlzYnpQwb/fZd3zsdZf9/sOqulHBRj/U+ek1nh+rM3fek358O6J5gl2bzR7pRDkjq5JrRiKC5YhFKylptpjeLmGWgOr8tuwbaWGwJFC9Zar6Y5xnYTWYpE6OYZnkHqZNTDugIckCBmUn4HequiOwtA21mRjhP8I4xRoDSRQyXEapw0TkWONsWzk0/EGqJePRLqbUOTAJDvGIzsEfuufiCihQkAo3xlXB28VXtSohbN63pAb0q+oncYUYioduYtLcX70DWIk0d72pOUOHpxyXUezLInKqHa5lBXQE56hYtVjr023th85WYhLZo4Xz5I3Wfy1I+L244iXPlEjrjWgN18VVLesq3HtbVd0cuKsFrVdFVbtwIWp5CWHJCjb+9XFJRfZhsCc9DNjuTxOR+UOpt40ROgy4zfoTpgPNcP4I81X1cyJyeyjlU+6Nn+BMjxlQU9WNjWB/gOXtyP63h4vI0kI7/Wd3GZO/WjB/uWmQzlXVj4jI4kKbimdnzcbsa8A2gSkgFKzvHvfqcU+wq3/gv2WCnJ9XyfMakiQMDpfoQVjCrfJe/m1pSztuczQu7l24pArem8+34zZcjGYXrYdU+Em6vw7XHb73DM5BQ5q8/xTgXcHi6jLmYyvgByLy5ZJDrRkp+zXGyecMjlf1B/FXVfUs4OEO2YYznC2yt01VbQLcPFp2vrFClkAmQj4+2A9v/70QOBJXzcnPhV8vOwKzVfVgfxjXWX8TcY47M0qIgz9EfxhkD8tLVPVX2sG7avAbvxd+akUiviMiTw/RjncBP7L9FB66vl/XiUhvIbJiXwY7oPlsa7NFZGabUu++OI/0vKC2/byIHNSkZk1xjnzVYZ45Aeclv4epw9cImJYiwb4V521f1/QQ2Lb/pqqH4EoY14L7+X5tDtyoqj8BzhCRB4cwZ3jP/7Vs/I+0dhYJtq/y9UMRubbIWARte0JVr8KZ1Dxt8H3aHpijqoeIyK312mTmlG/iTJehRsKP3bMMeK7n45JoL1OJz2a7ygS5IFe68oy8QLDdYnKKhcsVFeY3bPRvBfuWENRDvF24w0xCVlJkwE/4fSLyyRY38vqm2j+UgUQFGXCgqp4jIre3QFC9lH08ztM1K1GDec7zOBH5TIcKZ/TjPEg7Mt+tMCwrElap5qymNaq1sfejC1TTvSZFXVU43L0kvg1wq6peZoT1Dpw5Q3COY1NxfiivL5GePXG4TEQuK7GZhmlAn1TVM4EjGOzB7SXXQ4A9VfUKk9ofCYjGm60dHy0Q6WJ7fhZKVqo6CZebOpSmljlm2f5vxfbsf3O2SaHFspZ7WE7rpxvY6/63PbjSuQvqSP4r43wCXoczT0hBvVwkhHcDu3oJdBhm2a+VM00wODxgbiTQZvTgzCNfVNW5wA3A7bhwMn9ur4mrjb61jc3addrpNYWX4fLQ1/NQ9/38oc2lFJi+zJi4m1X1amC+9d0zP+tZW3a19ayFtePP6LNF5DnPOIw7or2MYP+BbdIeuUJhYl4jF1neHpIkpLXFZJWu/KoOqMbrLlpTi72zwL1fJiKnBLF22oYadZmXaQPSXlgFrBHV2TKrv+UoPkxVn2PA9qy2MPazRd5wHwKnjK2Nu86DZ95uC3+zQGW0t6r+VETu6EDImQBrq+rTTaoQ63HfL+k47Pnrrsrknsks6HPb6LixJ9yZHdhXq+qJduCWHcYJLvXjbsNoXdISgv2gMaQyjNSfmCp3Z1wGsSLhzuyAPYABu/BQmpsikTpDRG4uMKsfYbDTk399CJhj49N0foBAdX2VMRcbMjjL2prG6JxO4+FflUBoaQRhfnY/LrmNxW3ALhavPuwZYAyeZ66+ZmffIcGeDdXOuTEQu9KY827G8lXbPKG83Ahx5tsxxBr+i5UW/SaD63CHa/jDdg23hsP/Kzg/iJNCe/q4ckTTmc5LvG8Wb0pXkouTlFVq1XKCrUqeTACU29mWf6oicvyIxR+uwvJ2z6ttASWWMSn3mZNauHxKwkY26LIMTTg7UiP3zrw6xxiQGUZUw3Hd3mxWeRPOYr69MxhskxOT5g8tqCordjh2CjVT2VUtnWOr10u2wMz0ae71K1u/mv2mvp6vbv3qQe+PMeH2KsZvAOcwUGwjD6RDH59fLCARljwMbd7e3+QxnBf6kwyRV8HvORFZAOxpqsgKA06U/vANn6fBFbYtVGt6aW0ecHigyfHt2J/BNlf//gVejd6KucZ+k4jIIuDXJdpBgM/aXm9m3deGubKCEADLF8M4D9ixUYJd6JMn3IcCRwfEuhZoadIh1gvBZ74cZhow/LWgnT8HPi4ifbZ2htUEWJsuZyDnfL01HK6fvNCWcF2nuOiKj4vIU2E7xg3R1pmksgeZzuY1lUny+yRh3VofWSJ125iTgqCXiZAzn3QEZaX+QKXhnzLFex4GKeqausbikAw2wSWF/qwPrO1T5TUoZeequgvOdhMu0jmWL3keLsNPeGB9QFU/VMcE0K6KW+qlpCxLM8jLCEk1I+2vkVTHHX/ivcn3xxVSSAKpMAuIZtEhUBhsP/S2zi7gz8AOInJPEzHWiYjcjcvTfY/dRwrtqAQq7NCumtYhUjNNDbzEM7T2rLfgQjnz4Hdiqv/z6xDaVjR3Z9s9CfpQw9mA3+nNFCXagrIrGeaSAnEKx+YeYE8R2dfyQyTNMsoB4U5EZAbOceyeYE6GWy8EbSoyFX4tPQrsIyJf8KlHG1g7GhDiPY3gD9WmpGAGqgTjHrblQeCDInJTcQ0n42PXutSkOo8N8h65LOlig9pSMpH63sEipHkveZbzeycnjoiU7bnwRca5hwRtP1VdWUT6Lcds05fPWzsWhyQDmZlCu1V3o8TR7uNj1kM1fA1XQMHjW8FB5g+TE4zT104SzzBPdAPXyyotaS7jyhFtOUnXDqZjcM5TdxQOXk8MqsFVlGYqOGey7wFTLWVn2kSaSS/J3QW8BzgFl7WtrB1ZQXKiQKQexoWL7emTGHkJ2L77JdtvxTCt+SJyX7uOmgET8nfg2sIzfNTLYYX97DHR2tnVAKEuXuH9+0zLsD/wDhGZaeddy9kkfS5vm6fZOHvwNDMDFAm1Z+TqrZlwvp6wdbOliPwyaKc2s4atoMwXgL1xYYRlbSqun9AGnuLCUE8HtjKCvdwaHnObtqrVxP49q2cis9Ie3lhbPDTBViWvTCCp9fHXux/kb6oII1+G82qTKP3mfQNwpaoei/P6btSRyXPvz3onqk5nJmvg+bB8EH8/jTu9JCYpfxZX6SiMnzxPRP4cFFy4VVV/hUvV6A+5LYC9ReScNkLAin1Sy6S1FUNnp/Pqu/tE5KGXutf4ioAgy2AqInNVdRuc3fVTdjCvSnn8sZ/PvwFXAD8TkYcDJqBZac7bKJ8DDjFv5E8CH8RlPpxI/TDDF3D22kuAC0Xkea8S97HpuKxXk3AhbXcx2NbcBZxW2KNtDas981TTohUTx6yjqmuKyDMFon0PAzkokib2Xz/wJM4mfwtwi4jcX9DMZR1aLz7JyQJczemf4hIv7YarYb1uwEjUw7PAzabSvtxU0C23M5hjscRAv8PZ1T+O84dae4j2VHEOan8AzjVmq25bxpRo6zQSBNV5rJaLXJ5O5M3VRWSJDBt/m9NNkvRxxZYHUNXXUpERzPBjk3EuzllmzYA4b4fLYPY8zYdgvaiqNwK/NK6R0SIgtsDeX1ClPYErPTekai4odjAFl8s4DO1aaJtomWOY/T3dFvAkBuw5x6nqJbi0iu2GgHkV6aa28BvB0QzY4l+yNu0VjHh7ounVxOer6ro4D+03FhjNpSbR3gn8w+yPyzJctSHNeZ+OxEKHZuCSvWyI847emIG0xYlJ4/8A/hmGhJWECPn90Gt7oSxet9+PQyfG0v6cZd7UZXumViIsfL4JASREVhzzoMhP3mm/EV91zebpeVxc+i/sXHoNLlf3BrgMhx59pgL/u83XM+F8tdvOAvO5AGfDP09VV8eltX0Nrh54qJV8zNrzkH/2cG0ZM6Lt043+bSbdb0AuSVbi3bWF1BIZuk1qRvu8FzLUHdBPj7iUXRGRpywdn4+fzAK1xpQW7rk6Ln3h3iaJfsXc+psiYE2ol30e4H5V3QnYIZBIFZfgfmkDnKZPDHEYLkwhzBp3quULTsMFKCIPGDf8rUDa3ggXMje9gyYCLbSn9HAJD6yIcUe48+CwVxF5whjKucPsg0qniIMvThOk4qyJyCOmhh1uLw5JpGxvj1qGPRMEqk30vdbGswYlNbG+ZiO4Vvw8hevleVwM+K0Ntlc6zVSEDIW16TngOQZS6ba1hseEaKsiHAf3X03PJj3ym2QSU2sLqYk01B6t9JBkfdx3/7PcBiB7jLik5NUxF5lK+HQG7L+hA0Gj6vHQriKmBnydqu6AK5SQNLlwGyVo/ar6ZlwGoDBMTYALGmQQclXdCFcuMOzHY8AP/cYN+iBGlE/BldlbOyDch6jqOcAjHUq4IgyfJa1YvjBi/BHuZcxXcPhJgRELva61U/H6JQQ2D0pwSh1m0LehoUp09RjtkdCyBWrbhp7Xjo+JH69xsF7CMr5DrZl8lNtUtn40YHIaWsOjTrSNYItMJ6/Ok7PSyexae7Fhgg1KTg+i/TrrzXvQr9OoyPSRl5oCO8rZqnqPSY07mvqlWYe+Yqq8Ki6P7qkisk8zRFtVVx3m+RJI9jvj1MJTgsWS4hIRzBkqO5EneDYO03BhcKEt+zsi8qyNURln/5SqfgUXhuIZhtWAo0XkCx1KuFLDmSp0GEnbO3xErEAEfIzboB2+32i3f1y2bQTnKh+HbeoIRpVoqyJcRCLTyarXyBmVSezVFMH2BK8PwSUPGO3B94T7Flwh9o1wxQF6mpgUX6Hm/TgnF+/iXwM+raqnm9dgdwOHlU9WsB71E/L7Z4be4X4RJTg7z8F10jwOUiVZ/9+GcyoLPXfvBc4JJPFjGaiaFHKXPmVjd7Cx9lXVM3Bl71p1VvG/uRendm8EHbMfRkRERIwWRo1oqyLMJ5U9qGXX8L1kVQ5olmAr5KYaf7CymJsAOI6M6aNOuH1VlocZqAvcLM611HbnFaTCTwE30bhj2yq4LECNEjfveOXH/TOWoWw4b1vfnukMFETwBPkoEek14r6bfWfYoWSgnvW3ReTDjVexqzs3Oc4xKCIiIiIS7bZwEYnsQa06h+nJynJEbQE1pEm7opLTjUiVubIzS3QaFZHRdyjy0mjgyCBN9cK+b6EBHwP+O5Bct/JF2Ru8Xx9OvV4maRfDHsIqYc8AXxSRi4eTcIN0pTvhUvGFUvZ1ltvZ25OPYSB8LB1izYWpKj+kqu8TkTkdKGgvDc5hDPOKiIiIRLv0IPUlNucmX05X1mNri8lRUl9iswkk1JC8pr8D4E1jmy+6HUeGoPbrLCPafix8LGijhGtNBnLdliGMz/T//xRXFu8fDRBsHwPt05+GjEeOq5LjHV6+jsu2BA0magnaNUNV52GOP60S1UiMIyIiItHuDME+IJ2kP816ydCBmthNiKd5pZuk1sujC5/njwDsPn6cDVqjL5Kr6ioF4tXMuGS4Qh0TKdT/NoK6P/AhBpyvvHr8DiPYPT6+dShGyaTsT+MSTITOZzODQggTcPb964fph3dC2wSX9MFrFd6OS7jyiw4lXImIiIiIRLsZ/PlMumQq1dps9pBuPT3rI89zkkRayPijKN1AletX34MXdSapyOgd7EEMYqcItvew3qtAzJ5loMrQcExJLiJXDdHmOUZE38rgkpm/UNUnReQPQ0nagWPZyrjCUCFjsQQ4OsjmtoSBUoONjOcWuMxJYaL8aap6MbCkQWm7YhoA0fYM4sONc2rPaTdneRY1AREREeOSaJuEXa3O5aPSI78ig7yGlNTEbpDK2dEqeqmCsPuoi8UdjUG0LDkn4lJ6hl7Ws3xe8gbvk9aRahPLe/xxXAH1tQvPOV9VtwlyNGdDSNkH4zL6hFL2GUX1emDjH0ZpQmrl7M7FxW77uO1X4jzZZzQgbSvwTIfradfDi/acmJAlIiLipUe0vUq8Ooftkx65gJwkz9AkaU1SVUUrXaS1JTxTmci1AqqjG4en5hW9C0OHVjWKblxO5Y1YPg3o+Q1Kf56ZGM6B7J+quhfOdu4Jdo6zhf9WVd8NLChKtj5mW1XXwxUXCNv5JPC9MF1pwNg0Mpheip8B7I4LgfMhYIer6i+A/wxDSLuAH6jqYlrP1ey9128GLi0bXnv9hqruQet1u30t4Z+LyHUdSiQTERERiXYnqBupCLX+Obw96ZErEmVyrVZeE7txMZecHlKpcoNszXM6zRUZGUUpW1X1XcA+Hb51HrxWcIlGHva5ZzvQ7kxVK1aE4avA/zCgeq/hcjr/AvgYTsUc1vT2NvejcIlZwvSgJ4rI020k1/cx4Q+p6inAsQxUvJkCHCMiBw4juVeAgzs0D78RkUuGINrvsasd9AJHBFqCiIiIiKbR0dKc3s7cN5fN0h65LEmYXKuStUWwGTjmslwvVUXYfsRKipaVTfNYiAuvWmKv7V5hmFYFOEVEflISL11Wzq0ZAlkzwn06LpVoBReSJdaOXYEZ9kzxUrYR/NcBn7G2+uf+HTijgexpwzIsdo+TcUn8/fj34/Kxv8HXKw8IXXEc2p0DP5cLhlkH/W0+I8flln/MmJVItCMiIsZW0taZpLIHmV7DxnlFrkoqvKLWO3SJzQYld01T0toiFnVXmC2Cqo6IA5qvZ+qRFsZnZVxWsU7jEeB4EfnfOmrTla0tE+3/VVthRkx6/xrOa/ujQR8BjlTVZ0XkJPueD/E6ncFVcgCmi8jiZmoVD6G9SKyE4Qx7lm9PN3Cmqu4YME7dLF+esVP5wycX1sGUDj/nHpwPQbuMTkRERCTaHSTYc9goq8jv0y426ATBdqc7uUwk1UXcIFN5YgRU454ovAD8b0Haeib4/26cXbgTNm3FFdi4Hri6TnUv366bGKhvWwHua5FAqknP+xmBnFx41raq+isR+Y9J2xvhVLq+zymuVu6FZv/uBOPkizGcg7Pxr8XgIiQbisgD9v9/Ojj+oRYjYXBFoF6cfXuVDt7/xyLS1y6jExEREdE20VYXc53p71m9VpErKhN4fW1R0/nEhxeDRS4Fhe1JmN45ou1VlVZb9fNDfO98BpzEOooy27A/3EXkRJyXed22N9hPn7TkOWDPBr7/EC772YghaH8fw/gLiMituJhzRrhNz9JE6FoTcywxz3lERMSYEm0j2LnOY7UMubIykbfWFpF1imCroklKmi1mabWazwFg/sipF0vqOudB8fpGwplaksaG8QBf7rmtHv5Bmb6kzufZMOMxIgU26rUpfNZQ7e5EE0IJuIP1vUvvHxERETHqRFunkUhCrjPpzkV+nU5iq9qCDkvYQp70kGZLuHnC+3lIp5HIdEayBmo2lKQ6FhPU6ec2U+pwtCTDRto0miUao0QcERExXtFq3LTzMr6WSrYWFyUrsVMLJTYbQwqIXiqCzh85r/GIiIiIiIiXHtEOamLnNZGfpZNl59pCapJ0lmAraCIkeS/9aYW5ANvPj563EREtbymX6jWGm0VErMCoNLfrjWDvQVa9Vk6vrMxnRkzCxlTjvdzB9dynioxmQpWIiJcYuqh0CUhXHIqIiJcB0VZFmE8qU6ll18p3kkkcmC0YMYLtCoR0Ab16hUwn1+2XZfGKiIhoHk/Tt+QF0KfjUEREvBwkbSPY/XM4OpnMN7OF1BQqMkINEyHNFpOnwmw7cqJaLyKiWUyf7rRT3SvtyXNPTWDVtZYOej8iImKFQkM0V5WKyyeeHNo1SX+U9ZFp3nxN7MaFbLLKBNJaL3dWrte3jaTHeERERERExIqCYR3RdJ4j2LW57Ne1sv4o6yMfSYJtVNupxpVZMp1c541s3e+IiJc8VGXZFRERscKiMizBnkqtNptPSo+clS0lz3MkGUmC7cT/VHtBRa8Eomo8IqLtTRWLlEREvCS2cn3G3FXs6p3NB7onyu80o5LXIElGlmArZJUe0qyPe9NVdHPZkqqCSAxViYiIiIh4mSOpK2ELWe8f2KF7ovxWcyqaoSNNsI1qK12gcI1sSVWnUYkEOyIiIiIiokQ9bhJ2TefyX3m3XJTApFqNvCM1sRuT/RPtB1QvA+BNkWBHREREREQsJ2nrTKcS75vDW/IeuTpJWL3aN3oEWyGvdJNkffyrMpGbAGRPYh7oiIiIiIiIkGj7mti9V7NppUcuTVLWqfWRJcno5ftWRekG4FrZml6dSRrl7IiIiIiICIeKEUtXE3sW62Uryaykwqa1XjIR0tFsjAiiVchEL1UQdo8TFBERERERsUzSXlYT+2rWyibKFWkPr6ktoTbaBBvIK10kWS9P9AjXmfNZTKoSERERERHhJW0Rcv0zXfli+W06gS1ri+gnoaKjTzBr9FChqtfKVBZ5ZiJOUUREREREhBFtvZ61soXy63QK2/ICVHrMqjzayOlGAOW36uLHY+amiIiIiIiIkGhXs+SAtKLr157lVqAi+ei7fmkOkpCwgMWVicwXUI2q8YiIiIiIiEH4f/ZzNBqQMB44AAAAAElFTkSuQmCC">
   <div><h1>Sistema Creativo Usados · Plan 90 días</h1><div class="meta"><b>Propone</b> Roberto Sánchez, Coordinador Marketing Usados — Brand Digital &amp; Data Analytics &nbsp;·&nbsp; <b>Para</b> Paola Toledo, jefatura directa &nbsp;·&nbsp; 02-oct-2026</div></div>
@@ -164,7 +194,9 @@ footer.cenefa span{margin-left:auto;font-size:12px;opacity:.85}
   <button data-p="p4">4 · Producción y calendario</button>
   <button data-p="p5">5 · Simulador de reputación</button>
   <button data-p="p6">6 · Web, SEO y competencia</button>
-  <button data-p="p7">7 · Bloqueadores y pedidos</button>
+  <button data-p="pT">7 · Tendencias</button>
+  <button data-p="p8">8 · Métricas</button>
+  <button data-p="p7">9 · Bloqueadores y pedidos</button>
 </nav>
 <main>
 
@@ -188,7 +220,7 @@ footer.cenefa span{margin-left:auto;font-size:12px;opacity:.85}
     <h4>Stock por segmento de compra — cada uno con su objeción</h4>
     <div class="grid g2" style="align-items:start">
       <div><div class="bars" id="bSeg"></div>
-      <p class="hint">Los 5 segmentos suman ~1.043 autos (53,4% del stock). <span class="falta" data-tab="1 · Diagnóstico">FALTA: segmento de los ~909 autos restantes (46,6%)</span></p></div>
+      <p class="hint">Los 5 segmentos suman ~1.043 autos (53,4% del stock). <span class="falta" data-tab="1 · Diagnóstico">FALTA: asignar a uno de los 5 segmentos los ~909 autos restantes (la lista de 88 modelos ya existe)</span></p></div>
       <table><tr><th>Segmento</th><th>Marcas fuertes</th><th>Objeción principal</th></tr>
       <tr><td><b>SUV familiar</b></td><td>3008/2008, RAV4, X-Trail, Tucson, Sportage, Forester</td><td>"¿Está bien mecánicamente? ¿Qué revisaron?"</td></tr>
       <tr><td><b>Camioneta de trabajo</b></td><td>Ranger, Silverado, Hilux, F-150</td><td>"¿Aguanta la pega? ¿Cuántos km tiene?"</td></tr>
@@ -196,6 +228,19 @@ footer.cenefa span{margin-left:auto;font-size:12px;opacity:.85}
       <tr><td><b>SUV premium</b></td><td>Explorer, Taos, Outlander, CX-5</td><td>"¿Vale la pena pagar más por un usado premium?"</td></tr>
       <tr><td><b>Chinas (todos los segmentos)</b></td><td>MG ZS, Tiggo 2/8, Poer, Jolion</td><td>"¿Se deprecia? ¿Hay repuestos?"</td></tr></table>
     </div>
+    <details><summary>Fuera del top 20: 1.236 autos (63,3%) — por qué se agrupa por categoría</summary><div class="body">
+      <div class="bars" id="bCola"></div>
+      <table class="mini"><tr><th>Modelo</th><th class="num">Autos</th><th>Tipo</th><th>Modelo</th><th class="num">Autos</th><th>Tipo</th></tr>
+      <tr><td>Nissan Kicks</td><td class="num">25</td><td>SUV compacta</td><td>Ford Explorer</td><td class="num">16</td><td>SUV premium</td></tr>
+      <tr><td>Subaru Outback</td><td class="num">24</td><td>Station wagon</td><td>Haval H6</td><td class="num">16</td><td>SUV china</td></tr>
+      <tr><td>Ford F-150</td><td class="num">22</td><td>Camioneta premium</td><td>Honda WR-V</td><td class="num">16</td><td>SUV compacta</td></tr>
+      <tr><td>Chevrolet Captiva</td><td class="num">20</td><td>SUV</td><td>Kia Seltos</td><td class="num">16</td><td>SUV compacta</td></tr>
+      <tr><td>Ford Territory</td><td class="num">20</td><td>SUV</td><td>Toyota Hilux</td><td class="num">15</td><td>Camioneta de trabajo</td></tr>
+      <tr><td>SsangYong Rexton</td><td class="num">19</td><td>SUV grande</td><td>VW Tiguan</td><td class="num">15</td><td>SUV</td></tr>
+      <tr><td>SsangYong Musso</td><td class="num">17</td><td>Camioneta</td><td>Nissan Versa</td><td class="num">15</td><td>Sedán</td></tr>
+      <tr><td>Nissan Qashqai</td><td class="num">17</td><td>SUV compacta</td><td></td><td></td><td></td></tr></table>
+      <p class="hint">166 modelos tienen menos de 5 autos (341 autos, 17,5%): no justifican pieza propia y van por categoría ("SUV compacta usada", "camioneta de trabajo"). Agrupar por categoría es obligatorio.</p>
+    </div></details>
     <details><summary>Las 18 marcas chinas — 425 autos</summary><div class="body">MG 117 · Chery 82 · JAC 42 · Haval 35 · Great Wall 27 · Changan 23 · Geely 20 · Maxus 19 · Jetour 13 · GAC 11 · Omoda 11 · JMC 8 · DFSK 8 · Exeed 2 · Jaecoo 2 · Foton 2 · BAIC 2 · Dongfeng 1</div></details>
   </div>
 
@@ -227,7 +272,7 @@ footer.cenefa span{margin-left:auto;font-size:12px;opacity:.85}
       <p class="hint">Leads y ventas solo para estas 3 zonas (59,5% de los leads, 55,9% de las ventas). <span class="falta" data-tab="1 · Diagnóstico">FALTA: leads y ventas de Temuco, Sur y Valdivia — requiere Metrix</span></p>
       <h4>Inversión Meta Ads por zona — % del total</h4>
       <div class="bars" id="bInvZona"></div>
-      <p class="hint">RM concentra el 56,3% de la inversión Meta; las 6 zonas del plan cubren el 93,2%. Montos de la planilla (total $245.437). <span class="falta" data-tab="1 · Diagnóstico">FALTA: unidad y período de los montos de inversión — no cuadran con el costo por venta (RM: $138.266 / 156 ventas ≠ $252.279)</span></p>
+      <p class="hint">RM concentra el 56,3% de la inversión Meta; las 6 zonas del plan cubren el 93,2%. Inversión de esta tabla = solo Meta Ads. Costo por venta = inversión total del holding ($64.057.694: Meta + Google + otros). No son directamente comparables. <span class="falta" data-tab="1 · Diagnóstico">FALTA: unidad y período de los montos Meta por zona ($245.437 no calza con un mes: solo Clicar Venta gastó $10.107.439 en Meta en 30 días, jul–ago 2026)</span></p>
     </div>
     <div class="card">
       <h4>Reputación — fichas Google, 01-oct-2026</h4>
@@ -289,8 +334,8 @@ footer.cenefa span{margin-left:auto;font-size:12px;opacity:.85}
   <div id="verts"></div>
   <h3>Keywords por tipo de marca — Google Autocomplete CL, scraping ampliado</h3>
   <div class="bars" id="bKwMarca"></div>
-  <p class="hint">Las tradicionales aparecen en 4,75x más variantes de consulta que las chinas. Es variedad de preguntas, no volumen de búsqueda. <span class="falta" data-tab="3 · Verticales">FALTA: conciliar total de keywords — 322 informadas vs 243 clasificadas por marca</span></p>
-  <h3>Keywords por intención — scraping original (182 únicas)</h3>
+  <p class="hint">Las tradicionales aparecen en 4,75x más variantes de consulta que las chinas. Es variedad de preguntas, no volumen de búsqueda. <span class="falta" data-tab="3 · Verticales">FALTA: clasificar por tipo de marca 79 de las 322 keywords (hoy hay 243 clasificadas)</span></p>
+  <h3>Keywords por intención — 322 únicas (scraping v1 + v2)</h3>
   <div class="bars" id="bKw"></div>
   <p class="hint">Autocomplete da la pregunta, no el volumen: estas keywords no están priorizadas por búsquedas. Volumen requiere Search Console (pendiente en pestaña 2).</p>
   <div id="kws"></div>
@@ -303,7 +348,7 @@ footer.cenefa span{margin-left:auto;font-size:12px;opacity:.85}
     <div class="ctl">
       <label>Grabaciones en sucursal por mes <span id="vGrab">2</span></label><input type="range" id="sGrab" min="0" max="6" step="1" value="2">
       <label>Episodios de podcast por mes <span id="vPod">2</span></label><input type="range" id="sPod" min="0" max="6" step="1" value="2">
-      <p class="hint" style="margin-top:10px">Cada pieza madre rinde 8 salidas; 4 de ellas son video vertical publicable. Techo duro: 4 piezas/semana en todo el holding (2 Clicar · 1 Salazar Israel · 1 Portillo). Costo por pieza madre: pendiente de cotización (pestaña 7).</p>
+      <p class="hint" style="margin-top:10px">Cada pieza madre rinde 8 salidas; 4 de ellas son video vertical publicable. Techo duro: 4 piezas/semana en todo el holding (2 Clicar · 1 Salazar Israel · 1 Portillo). Costo por pieza madre: pendiente de cotización (pestaña 9).</p>
     </div>
     <div>
       <div class="out">
@@ -357,7 +402,7 @@ footer.cenefa span{margin-left:auto;font-size:12px;opacity:.85}
       <div class="bars" id="bRepSim"></div>
       <h4>Reseñas nuevas necesarias por meta (sin negativas)</h4>
       <table id="repTable"><tr><th>Meta</th><th class="num">A la calidad del slider</th><th class="num">Meses al ritmo del slider</th></tr></table>
-      <p class="hint">Requiere Google Business Profile (pestaña 7) y proceso de solicitud de reseña post-entrega operado por Comercial y Postventa; sin eso el gate no se cruza con contenido.</p>
+      <p class="hint">Requiere Google Business Profile (pestaña 9) y proceso de solicitud de reseña post-entrega operado por Comercial y Postventa; sin eso el gate no se cruza con contenido.</p>
     </div>
   </div>
 </section>
@@ -424,7 +469,7 @@ footer.cenefa span{margin-left:auto;font-size:12px;opacity:.85}
   <tr><td><b>Google Business Profile</b></td><td>Responder reseñas, completar 5 fichas vacías</td><td>La vertical 6 no se desbloquea nunca</td><td>Dueño de fichas (Comercial / TI)</td></tr>
   <tr><td><b>Stock por sucursal</b></td><td>Regionalizar el creativo e Insider</td><td>El contenido regional habla de stock nacional</td><td>Comercial / Power BI</td></tr></table>
   <div class="grid g2">
-    <div class="card t"><h4>Argumento de presupuesto</h4>El pedido no es "para hacer contenido": es <b>para alimentar el canal más eficiente del holding</b>. Paula IA convierte 1,92x mejor con el 4,02% de la inversión y ninguna pieza lo empuja hoy. Lo que se pide: 4 piezas madre al mes con video montado por creadores externos. Monto: <span class="falta" data-tab="7 · Bloqueadores">FALTA: cotización de creadores (semana 3 de octubre)</span>. Mientras no exista la cifra, el pedido formal es de accesos y mandato.</div>
+    <div class="card t"><h4>Argumento de presupuesto</h4>El pedido no es "para hacer contenido": es <b>para alimentar el canal más eficiente del holding</b>. Paula IA convierte 1,92x mejor con el 4,02% de la inversión y ninguna pieza lo empuja hoy. Lo que se pide: 4 piezas madre al mes con video montado por creadores externos. Monto: <span class="falta" data-tab="9 · Bloqueadores">FALTA: cotización de creadores (semana 3 de octubre)</span>. Mientras no exista la cifra, el pedido formal es de accesos y mandato.</div>
     <div class="card"><h4>Mandato transversal</h4>
       <table><tr><th>Área</th><th>Entrega</th><th>Recibe</th></tr>
       <tr><td>Postventa + Comercial</td><td>Responder 100% de reseñas · pedir reseña post-entrega · acceso a patio y taller</td><td>Desbloqueo de la vertical 6 · contenido local de su sucursal</td></tr>
@@ -454,6 +499,102 @@ footer.cenefa span{margin-left:auto;font-size:12px;opacity:.85}
       <li><b>Diciembre como Mes 3</b> contamina la lectura final; la decisión de Fase 2 se toma con la Matriz, pero el cambio estructural de inversión espera enero.</li>
     </ol>
   </div></details>
+</section>
+
+<!-- ========== 7 TENDENCIAS ========== -->
+<section class="panel" id="pT">
+  <h2>Tendencias</h2>
+  <div class="tr-head">
+    <div class="tr-count" id="trCount"></div>
+    <span class="hint">Estado: <span class="tdot r"></span> no lo hacemos · <span class="tdot y"></span> parcial · <span class="tdot g"></span> lo hacemos bien. <span class="vpill ok">✓ verificado</span> = cifra contrastada con la fuente el 03-oct-2026; <span class="vpill src">fuente citada</span> = tomada del brief sin contrastar.</span>
+  </div>
+  <div id="trBody"></div>
+  <div id="funnelHolder">
+  <details><summary><span class="tag-funnel">DATO FUNNEL</span> 1.5 — 1.325 leads al mes se descartan por financiamiento negado — y no hay contenido educativo de financiamiento</summary><div class="body">
+    <p><b>Fuente:</b> Funnel Leads Usados, reporte Yerko, septiembre 2026.</p>
+    <table class="mini"><tr><th>Lado</th><th>Dato</th></tr>
+    <tr><td>Funnel</td><td>Motivo #3 de descarte: 1.325 leads/mes negados por financiamiento</td></tr>
+    <tr><td>Búsqueda</td><td>Cuarta intención por variantes de consulta (24 de 322 keywords). Es variedad de preguntas, no volumen.</td></tr>
+    <tr><td>Competencia</td><td>3 de 7 competidores se posicionan en financiamiento (Salfa, Autofin, Derco)</td></tr>
+    <tr><td>Contenido propio</td><td>Sin guía, calculadora ni nota educativa de financiamiento identificada. La pauta y la meta description de Salazar Israel sí mencionan financiamiento. <span class="falta" data-tab="7 · Tendencias">FALTA: inventario de contenido de financiamiento publicado en los 3 sitios</span></td></tr></table>
+    <p><b>Implicancia:</b> brecha doble. Se pierden leads que ya llegaron y no se capturan los que buscan cómo financiar. La vertical 3 "Con qué plata" ataca ambos lados.</p>
+  </div></details>
+  </div>
+  <h3>1.4 en detalle — Los 10 usados más vendidos de Chile vs nuestro stock</h3>
+  <div class="filters">
+    <div><label>Buscar</label><input id="tvQ" type="search" placeholder="marca o modelo"></div>
+    <div><label>Origen</label><select id="tvO"><option value="">Todos</option><option value="si">China</option><option value="no">No china</option></select></div>
+    <div><label>Stock mínimo</label><select id="tvS"><option value="0">Cualquiera</option><option value="10">10+ autos</option><option value="20">20+ autos</option></select></div>
+    <div class="counter" id="tvCount"></div>
+  </div>
+  <table class="mini" id="tvT"><thead><tr><th class="num">#</th><th>Más vendido (Kavak, 1er sem. 2026)</th><th class="num">Nuestro stock</th><th>Origen</th><th>¿Tenemos contenido?</th></tr></thead><tbody id="tvB"></tbody></table>
+  <p class="hint">Ranking verificado en el reporte Kavak (Chócale, 31-ago-2026). Stock: RAV4, 208, MG ZS y Tiggo 2 con la medición de sitemaps; el resto, del brief. MG 3 figura en dos slugs (16 + 16).</p>
+</section>
+
+<!-- ========== 8 MÉTRICAS ========== -->
+<section class="panel" id="p8">
+  <h2>Métricas</h2>
+  <div class="status-bar" id="stBar">
+    <button class="st" data-go="m1"><span class="dot y"></span>Funnel de leads · Parcial</button>
+    <button class="st" data-go="m2"><span class="dot r"></span>SEO · Sin datos</button>
+    <button class="st" data-go="m3"><span class="dot r"></span>Orgánico social · Sin datos</button>
+    <button class="st" data-go="m4"><span class="dot r"></span>Blog · Sin datos</button>
+  </div>
+
+  <div class="msec" id="m1">
+    <h3><span class="dot y" style="display:inline-block;width:12px;height:12px;border-radius:50%"></span>1 · Funnel de leads <span class="pill y">Parcial</span></h3>
+    <p class="hint">Fuente: Funnel Leads Usados, reporte Yerko, septiembre 2026. No cuadra con el reporte por canal del Diagnóstico (13.581 leads / 444 ventas). <span class="falta" data-tab="8 · Métricas">FALTA: conciliar reporte Yerko (14.823 leads / 471 ventas) con reporte por canal (13.581 / 444)</span></p>
+    <div class="grid g2" style="align-items:start">
+      <div class="tbl-wrap"><table class="mini">
+        <tr><th>Métrica</th><th class="num">Valor</th></tr>
+        <tr><td>Leads totales (sept. 2026)</td><td class="num"><b>14.823</b></td></tr>
+        <tr><td>Ventas cerradas</td><td class="num"><b>471</b></td></tr>
+        <tr><td>Tasa de cierre</td><td class="num">3,2%</td></tr>
+        <tr><td>% descartado</td><td class="num" style="color:var(--mag)"><b>71,1%</b></td></tr>
+        <tr><td>% calificado</td><td class="num">5,2%</td></tr>
+        <tr><td>Ventas cerradas por otro vendedor</td><td class="num">33,1%</td></tr>
+      </table></div>
+      <div>
+        <h4>Top motivos de descarte — leads perdidos al mes</h4>
+        <div class="bars" id="bDesc"></div>
+        <p class="hint">Los 4 motivos suman 5.621 leads: 37,9% de todos los leads y 53,3% de los descartados.</p>
+      </div>
+    </div>
+    <div class="callout" style="margin:10px 0 14px"><b>Temuco y Valdivia concentran el 57% de los leads atrasados</b> en seguimiento. Valdivia recibe el 1,2% de la inversión Meta: el atraso no se explica por volumen de pauta.</div>
+
+    <h4>Conexión contenido → funnel</h4>
+    <div id="cxAcc"></div>
+
+    <div class="banner" style="margin-top:14px">
+      <div class="grid g2" style="align-items:center">
+        <div>
+          <div style="font-size:12px;opacity:.85;text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px">Impacto estimado · ventas adicionales por mes</div>
+          <div class="big" id="impV">~17</div>
+          <div style="font-size:13px;margin-top:6px" id="impT"></div>
+        </div>
+        <div style="background:rgba(255,255,255,.08);border-radius:8px;padding:12px 14px">
+          <label style="font-size:12.5px;font-weight:600;display:block">Reducción de descartes atacables <span id="vRed" style="float:right;color:var(--amarillo)">15%</span></label>
+          <input type="range" id="sRed" min="0" max="30" step="1" value="15" style="width:100%;accent-color:#fcbe01">
+          <label style="font-size:12.5px;font-weight:600;display:block;margin-top:8px">Tasa de cierre de leads recuperados <span id="vConv" style="float:right;color:var(--amarillo)">2,0%</span></label>
+          <input type="range" id="sConv" min="0.5" max="3.2" step="0.1" value="2.0" style="width:100%;accent-color:#fcbe01">
+          <div style="font-size:11.5px;opacity:.85;margin-top:6px">El "~17" del brief solo se obtiene si los leads recuperados cierran entre 1,5% y 2,0%. Al cierre promedio (3,2%) serían 27–36. <span class="falta" data-tab="8 · Métricas" style="color:#00254b">FALTA: tasa de cierre real de leads recuperados (Lead Management)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="msec" id="m2">
+    <h3><span class="dot r" style="display:inline-block;width:12px;height:12px;border-radius:50%"></span>2 · SEO <span class="pill m">Sin datos</span></h3>
+    <div class="pending">📊 <b>Pendiente GSC</b> — Conectar Google Search Console para poblar impresiones, clics, CTR y posiciones por keyword. (Mismo acceso pendiente de la pestaña 2.)</div>
+  </div>
+  <div class="msec" id="m3">
+    <h3><span class="dot r" style="display:inline-block;width:12px;height:12px;border-radius:50%"></span>3 · Orgánico social <span class="pill m">Sin datos</span></h3>
+    <div class="pending">📊 <b>Pendiente acceso IG</b> — Solicitar acceso a Instagram Insights / Meta Business Suite para poblar alcance, engagement y crecimiento. <span class="falta" data-tab="8 · Métricas">FALTA: acceso a Instagram Insights de las 3 cuentas</span></div>
+  </div>
+  <div class="msec" id="m4">
+    <h3><span class="dot r" style="display:inline-block;width:12px;height:12px;border-radius:50%"></span>4 · Blog <span class="pill m">Sin datos</span></h3>
+    <div class="pending">📊 <b>Publicar primeras 5 notas</b> — Tráfico orgánico, tiempo en página y conversiones se activan tras publicar el primer lote de contenido SEO.</div>
+  </div>
 </section>
 </main>
 
@@ -567,22 +708,22 @@ renderMx();
 /* ================= VERTICALES Y KEYWORDS ================= */
 var VERTS=[
  {n:"1 · El dato que no te cuentan",tag:"Mes 1 · transversal",obj:"Miedo a problemas ocultos, en los 5 segmentos: SUV familiar (¿qué revisaron?), camioneta (¿cuántos km, aguanta la pega?), city car, premium y chinas. Insumo real: inspección de 240 puntos nunca mostrada.",kw:"16 de miedo/verificación: robado · chocado · deudas · multas · uber · kilometraje aceptable · garantía",fmt:"Reel POV de manos del inspector + voz en off, hallazgo real por pieza",can:"Meta Reels · TikTok · Shorts · bloque blog · banner ficha",fun:"MOFU",ej:["\"Los 240 puntos en 40 segundos\" sobre un 3008 real","\"Lo que encontró el inspector esta semana\": hallazgo real y qué se hizo (reparar, bajar precio, rechazar)","\"Mismo modelo, dos historias\": dos RAV4 del mismo año y qué cambia el precio"]},
- {n:"2 · Chino y bueno",tag:"Mes 1 · 1 de 5 segmentos",obj:"Objeción adicional del segmento chino (21,8% del stock): además de qué revisaron, preguntan por repuestos y reventa. Dos piezas, no una: SUV familiar (reventa, garantía) y camioneta de trabajo (carga, repuesto en regiones: Poer, T60).",kw:"15 de garantía/respaldo + 12 de competidor (\"mg zs usado yapo\", \"great wall usados chileautos\")",fmt:"Reel educativo + carrusel de objeciones + módulo Insider de garantía",can:"Meta + educativo · blog · Insider",fun:"TOFU → MOFU",ej:["\"El MG ZS a los 60.000 km: lo que vimos en inspección\"","\"¿Hay repuestos? Fuimos a buscarlos\" (mesón, tiempo real; validar con Postventa)","\"Poer de trabajo: carga, repuesto en regiones\" (camioneta, objeción distinta)"]},
+ {n:"2 · Chino y bueno",tag:"Mes 1 · 1 de 5 segmentos",obj:"Objeción adicional del segmento chino (21,8% del stock): además de qué revisaron, preguntan por repuestos y reventa. Dos piezas, no una: SUV familiar (reventa, garantía) y camioneta de trabajo (carga, repuesto en regiones: Poer, T60).",kw:"15 de garantía/respaldo + 23 de competidor (\"mg zs usado yapo\", \"great wall usados chileautos\")",fmt:"Reel educativo + carrusel de objeciones + módulo Insider de garantía",can:"Meta + educativo · blog · Insider",fun:"TOFU → MOFU",ej:["\"El MG ZS a los 60.000 km: lo que vimos en inspección\"","\"¿Hay repuestos? Fuimos a buscarlos\" (mesón, tiempo real; validar con Postventa)","\"Poer de trabajo: carga, repuesto en regiones\" (camioneta, objeción distinta)"]},
  {n:"3 · Con qué plata",tag:"Mes 1 · nueva",obj:"La primera barrera: antes del miedo al auto está la plata. 24 keywords de financiamiento y 3 de 7 competidores compitiendo ahí (Salfa, Autofin, Derco).",kw:"Sin pie (10) · en cuotas (10) · con DICOM (4) · crédito (4)",fmt:"Reel explicativo con pantalla de simulación + voz en off; cifras solo con oferta real validada por Finanzas",can:"Meta · Search (si GSC confirma) · Insider (abandono en ficha → mail)",fun:"TOFU",ej:["\"¿Se puede comprar usado sin pie? Lo que sí y lo que no\"","\"Cuotas fijas: cómo se calcula la cuota real de un Groove\"","\"Con DICOM: qué opciones existen de verdad\" (solo lo que Finanzas confirme)"]},
- {n:"4 · El auto de tu ciudad",tag:"Mes 2",obj:"\"Ese auto no está cerca / no es para acá\". Insumo editorial: la Matriz (stock por sucursal, ventas por zona).",kw:"14 de ciudad/zona",fmt:"Reel en sucursal regional, cliente real sin rostro (manos, llaves), voz en off local",can:"Meta geosegmentado · Search local · Insider (disponibilidad) · mail por zona",fun:"BOFU",ej:["\"Las 5 camionetas que están hoy en [sucursal Longitudinal]\"","\"Qué compra Concepción\" (requiere ventas por zona; si no, stock del día)","\"De la sucursal a tu casa\": cómo llega un auto a regiones"]},
- {n:"5 · Trastienda",tag:"Mes 3",obj:"\"No sé por qué cuesta eso ni qué le hicieron\". Reacondicionamiento, tasación, precio. Ventaja no comprable con presupuesto; alimenta Compra.",kw:"12 de precio + tasación",fmt:"Detrás de escena: manos, taller, pantalla del tasador",can:"Meta · TikTok · podcast · blog",fun:"MOFU (Venta) + TOFU (Compra)",ej:["\"Cómo se decide el precio de un Tracker: 4 variables\"","\"Tasación en vivo: qué sube y qué baja\" (Sportage)","\"De la recepción al patio: 7 días de un auto usado\""]},
+ {n:"4 · El auto de tu ciudad",tag:"Mes 2",obj:"\"Ese auto no está cerca / no es para acá\". Insumo editorial: la Matriz (stock por sucursal, ventas por zona).",kw:"25 de ciudad/zona",fmt:"Reel en sucursal regional, cliente real sin rostro (manos, llaves), voz en off local",can:"Meta geosegmentado · Search local · Insider (disponibilidad) · mail por zona",fun:"BOFU",ej:["\"Las 5 camionetas que están hoy en [sucursal Longitudinal]\"","\"Qué compra Concepción\" (requiere ventas por zona; si no, stock del día)","\"De la sucursal a tu casa\": cómo llega un auto a regiones"]},
+ {n:"5 · Trastienda",tag:"Mes 3",obj:"\"No sé por qué cuesta eso ni qué le hicieron\". Reacondicionamiento, tasación, precio. Ventaja no comprable con presupuesto; alimenta Compra.",kw:"23 de precio + tasación",fmt:"Detrás de escena: manos, taller, pantalla del tasador",can:"Meta · TikTok · podcast · blog",fun:"MOFU (Venta) + TOFU (Compra)",ej:["\"Cómo se decide el precio de un Tracker: 4 variables\"","\"Tasación en vivo: qué sube y qué baja\" (Sportage)","\"De la recepción al patio: 7 días de un auto usado\""]},
  {n:"6 · Lo dijo un cliente",tag:"BLOQUEADA hasta 3,2★",blk:true,obj:"Desconfianza. Con 2,23★ amplificar testimonios manda al cliente a leer justo lo que nos hunde. Desbloqueo: 3,2★ (ver simulador) + proceso de reseña post-entrega.",kw:"garantía auto usado automotora · competidor (el respaldo que el marketplace no da)",fmt:"Cliente real sin rostro (voz, manos, llaves), reseña real en pantalla",can:"Meta remarketing · Insider (recurrente) · ficha",fun:"BOFU",ej:["\"La entrega\": el momento de las llaves","\"Lo que dijo a los 3 meses\"","\"La reseña de la semana\" — grabar desde Mes 2 cuesta poco; publicar depende del gate"]}
 ];
 el('verts').innerHTML=VERTS.map(function(v){ return '<details'+(v.blk?' class="blk"':'')+'><summary>'+v.n+' <span class="pill '+(v.blk?'m':'t')+'">'+v.tag+'</span></summary><div class="body"><table><tr><th>Ataca</th><th>Keywords</th><th>Formato</th><th>Canales</th><th>Funnel</th></tr><tr><td>'+v.obj+'</td><td>'+v.kw+'</td><td>'+v.fmt+'</td><td>'+v.can+'</td><td>'+v.fun+'</td></tr></table><b>3 piezas:</b><ol style="margin:4px 0;padding-left:18px"><li>'+v.ej.join('</li><li>')+'</li></ol></div></details>'; }).join('');
 
-var KW=[{i:"Genérica / modelo",n:72,d:"\"[modelo] usado\", \"[modelo] usado precio\". Son el creativo de performance por modelo, no la pieza madre."},
+var KW=[{i:"Genérica / modelo",n:162,d:"\"[modelo] usado\", \"[modelo] usado precio\". Son el creativo de performance por modelo, no la pieza madre."},
  {i:"Financiamiento",n:24,d:"<b>Sin pie (10):</b> auto usado sin pie · sin pie inicial · sin pie y con dicom · comprar auto usado sin pie · comprar auto usado sin pie chile · comprar sin pie y en cuotas · credito auto usado sin pie · donde comprar un auto usado sin pie · venta de auto usado sin pie · en cuotas sin anticipo<br><b>En cuotas (10):</b> auto usado en cuotas · en cuotas fijas · en cuotas sin interes · comprar auto usado en cuotas · comprar en cuotas fijas · como vender un auto usado en cuotas · tu auto usado en cuotas · venta de auto usado en cuotas<br><b>Con DICOM (4):</b> auto usado con dicom · comprar auto usado con dicom · venta de auto usado con dicom · sin pie y con dicom<br><b>Crédito (4):</b> comprar auto usado a credito · con credito automotriz · con tarjeta de credito · credito auto usado simulador"},
- {i:"Atributo técnico",n:17,d:"Motor, caja, tracción, consumo por modelo: alimentan la columna de keywords de la Matriz."},
+ {i:"Atributo técnico",n:34,d:"Motor, caja, tracción, consumo por modelo: alimentan la columna de keywords de la Matriz."},
  {i:"Miedo / verificación",n:16,d:"como saber si un auto usado es robado · fue chocado · tiene deudas · tiene multas · está en buenas condiciones · fue usado en uber · kilometraje aceptable para auto usado · kilometraje recomendado · auto usado garantia · garantia auto usado automotora"},
  {i:"Garantía / respaldo",n:15,d:"Garantía, respaldo, automotora vs particular: vertical 2 y 6."},
- {i:"Ciudad / zona",n:14,d:"\"autos usados [ciudad]\": vertical 4 e Insider."},
- {i:"Precio",n:12,d:"\"[modelo] usado precio\", tasación: vertical 5."},
- {i:"Competidor directo",n:12,d:"12 keywords llevan yapo, chileautos o mercado libre pegados al modelo (\"mg zs usado yapo\", \"great wall usados chileautos\"). La gente busca el modelo donde cree que está más barato; el diferencial es el respaldo."}];
+ {i:"Ciudad / zona",n:25,d:"\"autos usados [ciudad]\": vertical 4 e Insider."},
+ {i:"Precio",n:23,d:"\"[modelo] usado precio\", tasación: vertical 5."},
+ {i:"Competidor directo",n:23,d:"23 keywords llevan yapo, chileautos o mercado libre pegados al modelo (\"mg zs usado yapo\", \"great wall usados chileautos\"). La gente busca el modelo donde cree que está más barato; el diferencial es el respaldo."}];
 bars('bKwMarca',[{l:'Marca tradicional',v:114},{l:'Sin marca (genéricas)',v:105,c:'t'},{l:'Marca china',v:24,c:'m'}],'',function(r){return r.v+' kw · '+fmt(r.v/243*100,0)+'%';});
 bars('bKw',KW.map(function(k){return {l:k.i,v:k.n,c:k.i==='Financiamiento'?'v':''};}),'',function(r){return r.v+' kw';});
 el('kws').innerHTML=KW.map(function(k){ return '<details><summary>'+k.i+' <span class="pill a">'+k.n+'</span></summary><div class="body">'+k.d+'</div></details>'; }).join('');
@@ -619,7 +760,7 @@ var CAL={
      ["Clicar · Short · pod 5","Reacondicionador","Clicar · Reel · V2","Haval / Chery: objeción reventa","SAIS · Reel · V5","El taller en 40 segundos","Portillo · Reel · V1","Lo que encontró el inspector (Tracker)"],
      ["Clicar · Reel · V5","Tasación en vivo: qué sube y qué baja (Sportage)","Clicar · Reel · V5","¿Cuánto vale tu auto? Puente a Compra con CTA WhatsApp","SAIS · Reel · V3","Crédito + parte de pago: cómo se suma","Portillo · Reel · V4","Concepción: stock de diciembre"],
      ["Clicar · Short · pod 6","Postventa: qué pasa cuando algo falla","Clicar · Reel · V1","90 días de inspección: lo que aprendimos","SAIS · Reel · V2","Poer / T60: camionetas chinas de trabajo","Portillo · Reel · V3","Simulador de crédito: qué mirar antes de firmar"]],
-  kpi:"Insider 3 → 4 (5 si ≥ 3,2★) · Notas usados 9 → 13 · Sitios con schema 1 → 3 · Decisión Fase 2 go/no-go documentada · Tablero de KPIs (pestaña 7) leído completo"}
+  kpi:"Insider 3 → 4 (5 si ≥ 3,2★) · Notas usados 9 → 13 · Sitios con schema 1 → 3 · Decisión Fase 2 go/no-go documentada · Tablero de KPIs (pestaña 9) leído completo"}
 };
 function renderCal(k){ var m=CAL[k];
   el('calBody').innerHTML='<div class="card"><b>'+m.t+'</b><p class="hint" style="margin:4px 0"><b>Objetivo:</b> '+m.obj+'</p><p class="hint" style="margin:4px 0"><b>Entregables:</b> '+m.ent+'</p></div>'+
@@ -648,6 +789,98 @@ function rep(){
 }
 ['sNew','sQ','sNeg'].forEach(function(id){ el(id).addEventListener('input',rep); }); rep();
 
+
+
+/* ================= PESTAÑA 7 · TENDENCIAS ================= */
+var TR=[
+ {s:'1 · Mercado automotor chileno',items:[
+  {id:'1.1',t:'Economía contractiva: Imacec en rojo la mayor parte de 2026',st:'r',dato:[['Imacec agosto 2026: −1,0%','ok'],['Cinco meses consecutivos en rojo a mayo 2026','ok'],['Desempleo 9,6% (jun–ago 2026), máximo en más de 5 años','ok'],['TPM 4,5%, mantenida en septiembre: el crédito no subió','ok'],['Dólar $984: importación de chinos más cara','src']],
+   merc:'Hipótesis: los autos sobre $20 millones rotan más lento; el grueso del mercado está entre $5 y $15 millones con crédito.',no:'El creativo no se ajusta al ciclo económico.',acc:'Priorizar en pauta y Shorts autos de $5–15 millones con la cuota en pantalla ("desde $X al mes") por sobre camionetas premium.'},
+  {id:'1.2',t:'El mercado de usados crece, y las chinas ganan peso',st:'r',dato:[['Enero–agosto 2026: 736.120 transferencias, +4,1% (2º mejor registro histórico)','ok'],['Primer semestre: 559.415, +5,8%','ok'],['Mayo 2026: 83.062 transferencias, −4,6% (un mes aislado)','src'],['Usados MG +14,9% · Maxus +32,3% · Changan +12,9%','src'],['Chinas en nuevos: 34,1% (37 de 75 marcas)','src']],
+   merc:'La ola china en nuevos llega al mercado secundario.',no:'425 autos chinos en stock y ningún contenido que ataque la objeción.',acc:'Arrancar la vertical 2 en octubre con los 3 chinos del top 10 nacional: MG ZS y Tiggo 2 primero, MG 3 tras corregir su slug duplicado.'},
+  {id:'1.3',t:'Más de la mitad de los usados se compra con crédito',st:'y',dato:[['Financiamiento: 50% de las compras en el 1er semestre 2026 (34% en 2025) — Kavak','ok'],['58% de los compradores de 18 a 23 años usa crédito','ok']],
+   merc:'Competidores como Autofin construyen toda su propuesta sobre el crédito.',no:'Sin calculadora, guía ni nota educativa de financiamiento. La pauta sí menciona "hasta 48 cuotas".',acc:'Vertical 3 en octubre: nota y Short "¿Se puede comprar usado sin pie?" + cuota visible en fichas.'},
+  {id:'1.4',t:'Los 10 usados más vendidos de Chile: 0 de 10 con contenido',st:'r',dato:[['Ranking Kavak 1er semestre 2026 (tabla filtrable abajo)','ok']],
+   merc:'MG 3, Mazda 3 y Suzuki Swift lideran.',no:'Tenemos stock de los 10 y no hay un solo Short de ninguno.',acc:'Incorporar MG ZS, RAV4, Tiggo 2 y 208 (ya en la Matriz) a las primeras 4 semanas; sumar MG 3 tras corregir el slug duplicado.'}]},
+ {s:'2 · Contenido',items:[
+  {id:'2.1',t:'TikTok es el canal de marca que crece',st:'r',dato:[['TikTok +200% en seguidores de marcas (2025) — Emplifi','src'],['Alcance orgánico de Instagram −30 a −40%, incluidos Reels','src']],
+   merc:'TikTok concentra el crecimiento de audiencia para marcas.',no:'TikTok sin inversión ni videos.',acc:'Publicar en TikTok los mismos 16 verticales del mes (costo marginal cero) y medir a 8 semanas con criterio de salida.'},
+  {id:'2.2',t:'Mandan los compartidos, no los likes',st:'r',dato:[['Algoritmo 2026: compartidos > guardados > comentarios > likes','src']],
+   merc:'Un walkaround de 30 s con un dato sorprendente se comparte.',no:'El contenido actual es informativo y estático.',acc:'Cada pieza abre con una pregunta o dato que invite a compartir ("este RAV4 tiene 45.000 km: ¿por qué cuesta eso?").'},
+  {id:'2.3',t:'Formatos que venden autos en 2026',st:'r',dato:[['Walkaround de 30 s con un solo CTA','src'],['Bajas de precio en clip urgente','src'],['Micro-demo de una característica en 15 s','src'],['"Llegaron 5 RAV4 esta semana"','src']],
+   merc:'Formatos cortos, con un CTA único.',no:'No se usan bajas de precio aunque hay 810 autos con descuento publicado.',acc:'Serie semanal "bajó de precio" con datos reales del feed: "Este Tracker bajó $1.400.000 esta semana".'},
+  {id:'2.4',t:'TikTok Automotive Inventory Ads (marzo 2026)',st:'r',dato:[['Catálogo de inventario que genera anuncios por auto, como Advantage+ de Meta','src'],['Dealers que lo usan rotan inventario 34% más rápido (dato del proveedor)','src']],
+   merc:'Catálogo dinámico de autos en TikTok.',no:'Sin feed de catálogo en TikTok.',acc:'Dejarlo en la hoja de ruta de la Fase 2; reutiliza el feed del catálogo Meta.'}]},
+ {s:'3 · Creadores de contenido',items:[
+  {id:'3.1',t:'El vendedor como marca: la gente le compra a personas',st:'y',dato:[['Vendedores individuales en TikTok venden más que tiendas grandes — Viryze / Dealer OMG','src']],
+   merc:'El comprador local siente que ya conoce al vendedor.',no:'Nadie de la empresa quiere salir en cámara.',acc:'Creador externo llave en mano como cara recurrente de la serie.'},
+  {id:'3.2',t:'Top creadores automotores de TikTok en Chile (sept. 2026)',st:'r',dato:[['Hive Influence: EME MIKE · Rodrigo Campos Hernández · ViralesCL · Pableke · Cars & Coffee Chile · Makinen Rally · Tío Tito GT','src']],
+   merc:'Tío Tito GT (Viña del Mar, ingeniero, reseñas directas) es el perfil más alineado con la zona y el tono.',no:'Sin creador contratado.',acc:'Cotizar a Tío Tito GT y a un respaldo en la semana 3 de octubre.',falta:'puestos 8 a 10 del ranking de creadores (verificar en Hive Influence)'},
+  {id:'3.3',t:'El mecánico como protagonista',st:'r',dato:[['La inspección de 240 puntos es invisible hoy','src']],
+   merc:'El mecánico en cámara da más credibilidad que el vendedor.',no:'La inspección nunca se ha mostrado.',acc:'Walkaround con voz en off del creador + datos del mecánico, en la grabación madre #1.'}]},
+ {s:'4 · Web',items:[
+  {id:'4.1',t:'Google Vehicle Feeds en Search Ads (junio 2026)',st:'r',dato:[['Inventario vinculado a anuncios de búsqueda, con foto y precio en la página de resultados','src']],
+   merc:'Es el equivalente de Shopping Ads para autos.',no:'No hay feed de autos estructurado para Google.',acc:'Construir el feed desde Contentful (prerrequisito); aprovechar el catálogo Meta como base.'},
+  {id:'4.2',t:'En Google, nuestras páginas core son invisibles',st:'r',dato:[['clicar.cl/vehiculos/usado: sin meta description ni H1','ok'],['Yapo, ChileAutos y MercadoLibre dominan la búsqueda genérica; Salfa lidera entre concesionarios','src']],
+   merc:'Los marketplaces capturan la intención genérica.',no:'Títulos, descriptions y H1 sin trabajar.',acc:'Corregir title, description y H1 desde Contentful esta semana (bugs 1–5, pestaña 6).'},
+  {id:'4.3',t:'AI Overviews y GEO',st:'r',dato:[['Las respuestas con IA en buscadores citan contenido que responde preguntas específicas','src'],['200 notas de blog, solo 5 de usados','ok']],
+   merc:'"¿Conviene un MG ZS usado?" respondido con datos se vuelve fuente.',no:'El blog sirve a Nuevos.',acc:'Escribir respuestas a las preguntas de las 322 keywords, empezando por miedo y garantía.'}]},
+ {s:'5 · Mailing',items:[
+  {id:'5.1',t:'Ciclo de vida completo, no solo captación',st:'r',dato:[['Dealers que miden venta → servicio → recompra retienen más — PureCars 2026','src']],
+   merc:'Secuencias post-venta y de recompra.',no:'El mailing solo existe para ofertas.',acc:'Secuencia post-venta: entrega → 30 días → servicio → "pasó un año, ¿renovamos?".'},
+  {id:'5.2',t:'Correos por momento de intención, no por segmento amplio',st:'y',dato:[['"Viste este auto 3 veces" → correo con ese auto','src']],
+   merc:'Disparadores por comportamiento.',no:'Insider está contratado; el brief dice que no está activado para usados, pero ya hay journeys en curso para Salazar Israel.',acc:'Confirmar qué journeys de Insider están activos en usados y activar el escenario 5 (abandono en ficha).'}]},
+ {s:'6 · Ranking en Google',items:[
+  {id:'6.1',t:'Quién domina "autos usados Chile"',st:'r',dato:[['Auditoría manual, sin Search Console: posiciones aproximadas','src']],
+   merc:'1–3 Yapo, ChileAutos, MercadoLibre · 4–6 Kavak, Autofin · 7–10 Salfa, Derco · 15+ Clicar, Salazar Israel, Portillo.',no:'Sin meta descriptions, sin H1, sin blog de usados.',acc:'La competencia en búsqueda son los marketplaces: diferenciar por respaldo (inspección, garantía), no por precio.'},
+  {id:'6.2',t:'31 keywords de miedo y garantía sin dueño',st:'r',dato:[['322 keywords: miedo/verificación 16 + garantía/respaldo 15 sin nadie que las capture','src']],
+   merc:'Financiamiento lo captura Autofin; lo genérico y el precio, los marketplaces.',no:'Ninguna nota responde "¿es seguro comprar un auto usado?".',acc:'Primeras 5 notas del blog: las preguntas de miedo y garantía, con datos reales de la inspección.'}]}
+];
+var TRdone={}; try{TRdone=JSON.parse(localStorage.getItem('trDone')||'{}');}catch(e){TRdone={};}
+function trSave(){ try{localStorage.setItem('trDone',JSON.stringify(TRdone));}catch(e){} }
+function trCount(){ var tot=0,done=0; TR.forEach(function(s){ s.items.forEach(function(it){ tot++; if(TRdone[it.id]) done++; }); }); el('trCount').innerHTML='<b>'+done+'</b> de '+tot+' tendencias accionadas'; }
+el('trBody').innerHTML=TR.map(function(s){ return '<div class="tsec"><h3>'+s.s+'</h3>'+s.items.map(function(it){
+  return '<details data-id="'+it.id+'"><summary><span class="tdot '+it.st+'"></span><span class="tt">'+it.id+' — '+it.t+'</span></summary><div class="body">'+
+   '<ul class="tlist">'+it.dato.map(function(d){return '<li>'+d[0]+'<span class="vpill '+d[1]+'">'+(d[1]==='ok'?'✓ verificado':'fuente citada')+'</span></li>';}).join('')+'</ul>'+
+   '<table class="mini"><tr><th>Lo que hace el mercado</th><th>Lo que no hacemos</th></tr><tr><td>'+it.merc+'</td><td>'+it.no+'</td></tr></table>'+
+   (it.falta?'<p><span class="falta" data-tab="7 · Tendencias">FALTA: '+it.falta+'</span></p>':'')+
+   '<div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap"><button class="acc-btn" data-a="'+it.id+'">Acción ▸</button><label class="chk"><input type="checkbox" data-c="'+it.id+'"'+(TRdone[it.id]?' checked':'')+'> Marcar como accionada</label></div>'+
+   '<div class="acc-box" id="acc-'+it.id.replace('.','-')+'">'+it.acc+'</div></div></details>'; }).join('')+'</div>'; }).join('');
+// 1.5 funnel dentro de la sección 1
+(function(){ var s1=document.querySelector('#trBody .tsec'); var h=el('funnelHolder'); while(h.firstChild){ s1.appendChild(h.firstChild);} h.remove(); })();
+document.querySelectorAll('#trBody .acc-btn').forEach(function(b){ b.addEventListener('click',function(){ var x=el('acc-'+b.dataset.a.replace('.','-')); x.classList.toggle('on'); b.textContent=x.classList.contains('on')?'Acción ▾':'Acción ▸'; }); });
+document.querySelectorAll('#trBody input[data-c]').forEach(function(c){
+  function paint(){ var d=c.closest('details'); d.querySelector('.tt').classList.toggle('tr-sum-done',c.checked); }
+  paint(); c.addEventListener('change',function(){ TRdone[c.dataset.c]=c.checked; trSave(); paint(); trCount(); }); });
+trCount();
+var TOP10=[[1,'MG 3',32,true],[2,'Mazda 3',11,false],[3,'Suzuki Swift',10,false],[4,'MG ZS',57,true],[5,'Kia Morning',12,false],[6,'Chery Tiggo 2',20,true],[7,'Suzuki Baleno',5,false],[8,'Toyota RAV4',49,false],[9,'Peugeot 208',25,false],[10,'Chevrolet Sail',12,false]];
+function tv(){ var q=el('tvQ').value.toLowerCase(),o=el('tvO').value,m=+el('tvS').value;
+  var r=TOP10.filter(function(x){ return (!q||x[1].toLowerCase().indexOf(q)>=0)&&(!o||(o==='si')===x[3])&&x[2]>=m; });
+  el('tvB').innerHTML=r.map(function(x){ return '<tr><td class="num">'+x[0]+'</td><td><b>'+x[1]+'</b></td><td class="num">'+(x[1]==='Suzuki Baleno'?'~':'')+x[2]+(x[1]==='MG 3'?' <span class="hint">(2 slugs)</span>':'')+'</td><td>'+(x[3]?'<span class="pill m">china</span>':'<span class="pill g">no china</span>')+'</td><td>❌</td></tr>'; }).join('')||'<tr><td colspan="5" class="hint">Ninguno cumple el filtro.</td></tr>';
+  var a=r.reduce(function(s,x){return s+x[2];},0); el('tvCount').textContent=r.length+' modelos · ~'+fmt(a)+' autos en stock · 0 con contenido'; }
+['tvQ','tvO','tvS'].forEach(function(id){ el(id).addEventListener('input',tv); el(id).addEventListener('change',tv); }); tv();
+bars('bCola',[{l:'Top 20 modelos',v:716},{l:'88 modelos con 5+ autos',v:895,c:'t'},{l:'166 modelos con <5 autos',v:341,c:'g'}],'',function(r){return fmt(r.v)+' · '+fmt(r.v/STOCK*100,1)+'%';});
+
+/* ================= PESTAÑA 8 · MÉTRICAS ================= */
+var DESC=[{l:'Desiste sin motivo',v:1738},{l:'No contesta',v:1533},{l:'Negado financiamiento',v:1325,c:'m'},{l:'Negado stock',v:1025}];
+var DESC_TOT=DESC.reduce(function(a,d){return a+d.v;},0);
+bars('bDesc',DESC.slice().sort(function(a,b){return b.v-a.v;}),'',function(r){return fmt(r.v)+' · '+fmt(r.v/14823*100,1)+'%';});
+var CX=[
+ {m:'Desiste sin motivo',n:1738,v:'1 · El dato que no te cuentan (transversal) + 6 · Lo dijo un cliente',mec:'Confianza: inspección mostrada, remarketing con casos reales. La vertical 6 está bloqueada hasta 3,2★: hoy solo opera la 1.',a:'Parcial'},
+ {m:'No contesta',n:1533,v:'CTA a WhatsApp (Paula IA) + 4 · El auto de tu ciudad',mec:'Es sobre todo un problema de contactabilidad. El contenido ayuda llevando al canal donde el lead responde (WhatsApp convierte 1,92x) y con nurturing por mail/Insider.',a:'Bajo'},
+ {m:'Negado financiamiento',n:1325,v:'3 · Con qué plata',mec:'Educar sobre opciones de crédito (pie, cuotas, DICOM) antes de llegar al vendedor, para que lleguen leads pre-calificados. El contenido no revierte un rechazo del banco.',a:'Medio'},
+ {m:'Negado stock',n:1025,v:'4 · El auto de tu ciudad + fichas web + Insider',mec:'Mostrar stock real y local, alertas de nuevos ingresos, fichas actualizadas. El contenido no crea stock: reduce la expectativa errada.',a:'Medio'}];
+el('cxAcc').innerHTML=CX.map(function(c){ return '<details><summary>'+c.m+' <span class="pill a">'+fmt(c.n)+' leads/mes</span> <span class="pill '+(c.a==='Bajo'?'m':(c.a==='Parcial'?'y':'t'))+'">Atacable por contenido: '+c.a+'</span></summary><div class="body"><table class="mini"><tr><th>Vertical que lo ataca</th><th>Mecanismo</th></tr><tr><td>'+c.v+'</td><td>'+c.mec+'</td></tr></table></div></details>'; }).join('');
+function imp(){
+  var r=+el('sRed').value/100, c=+el('sConv').value/100;
+  el('vRed').textContent=Math.round(r*100)+'%'; el('vConv').textContent=fmt(c*100,1)+'%';
+  var rec=DESC_TOT*r, v=rec*c;
+  el('impV').textContent='~'+fmt(Math.round(v));
+  el('impT').innerHTML=fmt(Math.round(rec))+' leads recuperados de 5.621 atacables · +'+fmt(v/471*100,1)+'% sobre las 471 ventas actuales';
+}
+['sRed','sConv'].forEach(function(id){ el(id).addEventListener('input',imp); }); imp();
+document.querySelectorAll('#stBar .st').forEach(function(b){ b.addEventListener('click',function(){ var s=el(b.dataset.go); s.scrollIntoView({behavior:'smooth',block:'start'}); var d=s.querySelector('details'); if(d) d.open=true; }); });
+
 /* ================= PESTAÑAS ================= */
 document.querySelectorAll('#tabs button').forEach(function(b){ b.addEventListener('click',function(){
   document.querySelectorAll('#tabs button').forEach(function(x){x.classList.toggle('on',x===b);});
@@ -662,5 +895,5 @@ document.querySelectorAll('#tabs button').forEach(function(b){ b.addEventListene
   el('modal').addEventListener('click',function(e){ if(e.target===el('modal')) el('modal').classList.remove('on'); });
 })();
 </script>
-</body>
-</html>
+
+</body></html>
